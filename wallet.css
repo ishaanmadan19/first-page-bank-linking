@@ -1,0 +1,156 @@
+/* 
+	Global classes 
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+	background-color: #6F2177;
+	text-align: center;
+}
+
+#screen-white {
+	height: 530px;
+	width: 300px;
+	margin: 105px 31px;
+	background-color: white;
+}
+
+.first-page-logo {
+	width:300px;
+	height:300px;
+	margin-top: 100px;
+}
+
+.button {
+	width: 120px;
+	height: 32px;
+	line-height: 32px;
+	border-radius: 2px;
+	font-size: 0.9em;
+	
+}
+
+.cancel-done-buttons {
+	position: absolute;
+	margin-left: 20px;
+	top:580px;
+}
+
+#done-button {
+	margin-left: 20px;
+	width: 120px;
+	height: 32px;
+	background-color: #6F2177;
+	color: white;
+}
+
+#cancel-button {
+	width: 120px;
+	height: 32px;
+}
+
+#register-button {
+	background-color: #0f9d58;
+	color: #fff;
+    margin: 0;
+    padding: 0;
+    border-color: #0f9d58;
+}
+
+.login-link {
+	font-size: 17px;
+	color: white;
+    margin-top: 10;
+    position: relative;
+    right: 3px;
+    background-color: #6F2177;
+    border-color: #6F2177;
+}
+
+.header-banks-cards-linking {
+	height: 50px;
+	width: 300px;
+	background-color: #6F2177;
+	text-align: center;
+}
+
+.page-title {
+	color: white;
+	font-size: 24px;
+	padding-top: 13px;
+
+}
+
+.linked-registry {
+	margin-left:10px;
+	margin-top: -10px;
+	margin-right: 50px;
+	width: 200px;
+}
+
+.linking{
+	display: inline-flex;
+	width:300px;
+	height: 50px;
+	margin-top: 70px;
+	margin-left: 15px;
+}
+
+
+.registry-writing {
+	font-size: 18px;
+}
+
+#linking-button {
+	background-color: #6F2177;
+	margin-top: 5px;
+}
+
+#bank-icon {
+	width: 130px;
+	position: relative;
+	left: 80px;
+	top: 50px;
+}
+
+#bank-logo {
+	width: 200px;
+	position: relative;
+	left: 50px;
+	top: 50px;
+}
+
+.bank-login {
+	position: relative;
+	margin-top: 60px;
+	margin-left: 20px;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:active {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
