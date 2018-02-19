@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     </head>
-    <body>
+    <body onload="checkY()">
 
       <div id="screen-white"> <!-- Creates the white background-->
       <!-- Creates the header bar-->
@@ -16,12 +16,12 @@
          <a href="p1_3_linking_banks.html"><button  class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" id="linking-button"><i class="material-icons">add</i>
           </button></a>
           <!-- creates the field that will autopopulate when the bank account is linked -->
-          <div class="linked-registry">
+          <div class="linked-registry" id="image-linked-bank" >
             <!-- Simple Textfield -->
-          <a href="p1_3_linking_banks.html"><form action="#">
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" id="sample1">
-              <label class="mdl-textfield__label" for="sample1"><p class="registry-writing">Link your bank account</p></label>
+          <a href="p1_3_linking_banks.html"><form id="lastHope" name="O"  action="#" >
+            <div id="bank-linked-field" class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="sample1" class="registry-writing" placeholder="Link your bank account">
+              <label class="mdl-textfield__label" for="sample1"></label>
             </div>
             </form></a>
           </div>
@@ -33,27 +33,28 @@
          </button>
          <div class="linked-registry">
             <!-- Simple Textfield -->
-          <form action="#">
-            <div class="mdl-textfield mdl-js-textfield">
-              <input class="mdl-textfield__input" type="text" id="sample1">
-              <label class="mdl-textfield__label" for="sample1"><p class="registry-writing">Link your cards</p></label>
+          <a href="carddetails.html"><form action="#">
+            <div id="card-linked-field" class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" class="registry-writing" id="sample1" placeholder="Link your cards">
+              <label class="mdl-textfield__label" for="sample1"  ></label>
             </div>
-            </form>
+            </form></a>
           </div>
      </div>
      <!-- Cancel and Done buttons to give user max freedom -->
      <div class="cancel-done-buttons">
-        <!-- Done button -->
-          <a href="p1_1_first_acess.html">
+        <!-- Cancel button -->
+          <a href="personal_info.html">
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" id="cancel-button">Cancel
             </button>
-        </a>
+          </a>
         <!-- Done button -->
-          <a href="p1_2_linking_banks_cards.html">
+          <a href="homeScreen.html">
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" id="done-button">Done
             </button>
           </a>
    </div>
    </div>
+   <script src="link-bank.js"></script>
    </body>
 </html>

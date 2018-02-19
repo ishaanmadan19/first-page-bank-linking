@@ -1,4 +1,5 @@
 
+
 function validateFields() {
 	//initializes variables
 	x = document.getElementById("user-id").value;
@@ -20,6 +21,7 @@ function validateFields() {
 	}
 	else {
 		window.location.href='p1_2_linking_banks_cards.html';
+
 	}
 	
 }

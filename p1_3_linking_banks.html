@@ -13,20 +13,27 @@
       <!-- Bank icon-->
       <img src="images/bank.png" id="bank-icon"> 
       <!-- Button to link a bank -->
-      <div class="linking">
-         <button  class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" id="linking-button"><i class="material-icons">add</i>
+      <div class="linking" class="dropdown">
+         <button  class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" id="linking-button" onclick="dropDown()"><i class="material-icons">add</i>
          </button>
           <!-- creates the field that will autopopulate when the bank account is linked -->
+          <div class="dropdown">
           <div class="linked-registry">
             <!-- Simple Textfield -->
-            <a href="p1_4_bank_login.html">
-            <form action="#">
+            <form onclick="dropDown()" action="#">
               <div class="mdl-textfield mdl-js-textfield">
                 <input class="mdl-textfield__input" type="text" id="sample1">
                 <label class="mdl-textfield__label" for="sample1"><p class="registry-writing">Link your bank account</p></label>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="p1_4_bank_login.html" onclick="getLinkedBank()" id="us-bank">US Bank<img src="images/US_bank.jpg" id="bank-search-logos"></a>
+                  <a href="#chase">Chase Bank<img src="images/chase_logo.svg" id="bank-search-logos"></a>
+                  <a href="#wells">Wells Fargo<img src="images/wells_fargo.jpg" id="bank-search-logos"></a>
+                  <a href="#america">Bank of America<img src="images/bank_america.svg" id="bank-search-logos"></a>
+                </div>
               </div>
-            </form></a>
+            </form>
           </div>
+        </div>
       </div>
       <div class="cancel-done-buttons">
         <!-- Done button -->
@@ -40,5 +47,6 @@
             </button>
           </a>
    </div>
+   <script src="link-bank.js"></script>
    </body>
 </html>

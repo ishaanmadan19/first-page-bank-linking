@@ -1,0 +1,278 @@
+/*
+	Global classes
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+	box-sizing: inherit;
+	box-sizing: border-box;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+	background-color: white;
+	color:gray;
+}
+
+.head-bar {
+	text-align: center;
+	background-color: purple;
+	color: white;
+	width: 308px;
+	height:45px;
+}
+
+.head-bar h1{
+	font-size: 35px;
+	font-family: Avenir, sans-serif;
+}
+.application
+{
+	height:440px;
+	width:300px;
+}
+.application img
+{
+	padding-top: 15px;
+	height:150;
+	width:200;
+	margin-bottom: 10px;
+}
+.applicationPay
+{
+	height:440px;
+	width:300px;
+}
+.applicationPay p1
+{
+	font-size: 35px;
+	font-family: Avenir, sans-serif;
+	margin-left: 100px;
+	padding-top:10px;
+}
+.applicationPay p2
+{
+	font-size:17px;
+}
+.applicationPay img
+{
+	padding-top:30px;
+	height:150;
+	width:200;
+	margin-bottom:10px;
+	margin-left: 50px;
+}
+.amount-spent
+{
+	font-size: 46px;
+	text-align: center;
+	margin-bottom:10px;
+	font-style: underline;
+}
+.budget-type
+{
+	font-size:23px;
+	text-align: center;
+	margin-top: 0px;
+}
+.card-images
+{
+	text-align: center;
+	font-size: 24px;
+}
+.progress-bar
+{
+	height:80px;
+
+}
+.progress-total
+{
+	background-color: gray;
+	width:70%;
+	margin-left: 50px;
+	height:16px;
+}
+#progress-sofar
+{
+	background-color:green;
+	height:16px;
+	width:40px;
+}
+#progress-tomake
+{
+	background-color:red;
+	height:16px;
+	width:54px;
+}
+.zero
+{
+	text-align: left;
+	width:11px;
+	float:left;
+}
+.total-budget
+{
+	text-align: right;
+	float:right:
+}
+#warning
+{
+	position: absolute;
+	left: 90px;
+	top: 230px;
+	margin-top:230px;
+
+}
+#cancel-button
+{
+	margin-left: 60px;
+}
+.confirm-button
+{
+	margin-left:70px;
+}
+.spendings
+{
+	position: inline;
+	align: inline-flex;
+	height:30px
+}
+#cards-list
+{
+
+	width: 160px;
+	height:120px;
+	margin-left: 70px;
+	margin-top: 0px;
+}
+#cards-list ul{
+	margin-right: 16px;
+	height:180px;
+	padding-bottom: 40px;
+}
+
+#cards-list li
+{
+	margin-right:16px;
+	height:170px;
+	padding-right: 64px;
+	border: 1px black solid;
+	background-color:lightgray;
+	margin-top:8px;
+	margin-bottom:20px;
+	width:140px;
+	padding-top:0px;
+}
+.card-images img
+{
+	height: 90px;
+	width:120px;
+}
+.bottom-bar {
+	text-align: center;
+	color: black;
+	width: 300px;
+	height:45px;
+	color:white;
+	margin-top:0px;
+	position: absolute;
+	top: 593px;
+	left:31px;
+	display: inline-flex;
+}
+
+.bottom-bar-button1
+{
+	height:45px;
+	width: 60px;
+	float:left;
+	padding-left:4px;
+	margin: 0px;
+	border:none;
+	border-top:1px;
+	border-color:black;
+	background-color:#F2F2F2;
+}
+.bottom-bar-button4 i
+{
+	margin-left:15px;
+}
+.bottom-bar-button2
+{
+	height:45px;
+	width: 60px;
+	float:left;
+	padding-left:4px;
+	margin: 0px;
+	border:none;
+	background-color:#F2F2F2;
+}
+.cancel-done-buttons {
+	position: absolute;
+	top:530px;
+	left:0px;
+}
+.cancel-done-buttons a
+{
+	color:white;
+}
+#done-button {
+	width: 120px;
+	height: 32px;
+	background-color: #6F2177;
+	color: white;
+}
+
+#cancel-button {
+	width: 120px;
+	height: 32px;
+}
+
+.bottom-bar-button3
+{
+	height:45px;
+	width: 60px;
+	float:left;
+	padding-left:4px;
+	margin: 0px;
+	border:none;
+	background-color:#F2F2F2;
+}
+.bottom-bar-button4
+{
+	height:45px;
+	width: 60px;
+	float:left;
+	padding-left:4px;
+	margin: 0px;
+	border:none;
+	background-color:#F2F2F2;
+}
+.bottom-bar-button5
+{
+	height:45px;
+	width: 60px;
+	float:left;
+	padding-left:4px;
+	margin: 0px;
+	border:none;
+	background-color:#F2F2F2;
+}
+.back-button {
+	height:45;
+	background-color: inherit;
+	border-color: inherit;
+	color: black;
+	padding-right:250px;
+}
+
+.back-button img
+{
+	padding-top: 2px;
+	height:36px;
+	width: 36px;
+}
