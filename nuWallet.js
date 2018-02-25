@@ -5,7 +5,7 @@ var amountSpent;
 var remaining;
 function progress()
 {
-	document.getElementById("progress-tomake").style.backgroundColor="green";
+	document.getElementById("progress-tomake").style.backgroundColor="#00E065";
 	document.getElementById("cancel-button").value="back";
 	amountSpent=document.getElementById("amount-spent").value;
 	remaining=document.getElementById("remaining").value;
