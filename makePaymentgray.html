@@ -8,13 +8,13 @@
     <body>
       <style>
       </style>
-        <div id="screen">
+        <div id="screen-2">
               <div class="head-bar-nu">
                 <h1>Make Payment</h1>
               </div>
               <div class="applicationPay">
                 <img src="images/lightgraycard.png" >
-                <p1 class="amount-spent">$20.00</p>
+                <p1 class="amount-spent">$<text id="amount-spent">20.00</text></p>
                 <p class="budget-type">Technology</p>
                 <div class="progress-bar">
                   <div class="progress-total">
@@ -24,7 +24,7 @@
                     <p class="zero">$0</p>
                     <p class="total-budget">$160</p>
                   </div>
-                  <p2 id="warning">You have $100 remaining</p>
+                  <p2 id="warning">You have $<text id="remaining">100</text> remaining</p>
               </div>
               <div class="cancel-done-buttons">
                  <!-- Done button -->
@@ -33,7 +33,7 @@
                    </button>
                  </a>
                  <!-- Done button -->
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" onclick="progress()" id="done-button">Done
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" onclick="progress()" id="done-button">Confirm
                     </button>
             </div>
             <div class="bottom-bar">

@@ -39,7 +39,7 @@ body {
 .head-bar-nu h1{
 	font-size: 35px;
 	font-family: Avenir, sans-serif;
-	/* font-weight: bold; */
+	font-weight: normal;
 }
 .application
 {
@@ -77,7 +77,14 @@ body {
 	margin-bottom:10px;
 	margin-left: 50px;
 }
-
+.cardPic
+{
+	padding-top:30px;
+	height:150;
+	width:200;
+	margin-bottom:10px;
+	margin-left: 50px;
+}
 .budget-type
 {
 	font-size:23px;
@@ -129,6 +136,14 @@ body {
 	top: 230px;
 	margin-top:230px;
 
+}
+.touchID
+{
+	height:90px;
+	width:108px;
+	position:absolute;
+	left:125px;
+	top:400px;
 }
 #cancel-button
 {
@@ -234,7 +249,11 @@ body {
 	width: 120px;
 	height: 32px;
 }
-
+#cancel-button2
+{
+	margin-left: 80px;
+	width:200px;
+}
 .bottom-bar-button3
 {
 	height:45px;
