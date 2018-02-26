@@ -47,6 +47,8 @@ body {
 	font-size: 24px;
 	font-family: Avenir, sans-serif;
 	font-weight: normal;
+	display: inline;
+	text-align: center;
 }
 
 .action-button-right {
@@ -217,30 +219,6 @@ body {
 	display: inline-flex;
 }
 
-.bottom-bar-button1 {
-	height:45px;
-	width: 60px;
-	float:left;
-	padding-left:4px;
-	margin: 0px;
-	border:none;
-	border-top:1px;
-	border-color:black;
-	background-color:#F2F2F2;
-}
-
-
-
-.bottom-bar-button2{
-	height:45px;
-	width: 60px;
-	float:left;
-	padding-left:4px;
-	margin: 0px;
-	border:none;
-	background-color:#F2F2F2;
-}
-
 .cancel-done-buttons {
 	position: absolute;
 	top:530px;
@@ -268,14 +246,37 @@ body {
 	margin-left: 80px;
 	width:200px;
 }
+
+.bottom-bar-button1 {
+	height:45px;
+	width: 60px;
+	float:left;
+	padding-left:4px;
+	margin: 0px;
+	border:none;
+	border-top:1px;
+	border-color:black;
+	background-color:#F2F2F2;
+}
+
+.bottom-bar-button2{
+	height:45px;
+	width: 60px;
+	float:left;
+	padding-left:8px;
+	margin: 0px;
+	border: none;
+	background-color:#F2F2F2;
+}
+
 .bottom-bar-button3
 {
 	height:45px;
 	width: 60px;
 	float:left;
-	padding-left:12px;
+	padding-left:14px;
 	margin: 0px;
-	border:none;
+	border: none;
 	background-color:#F2F2F2;
 }
 
@@ -297,6 +298,15 @@ body {
 	margin: 0px;
 	border:none;
 	background-color:#F2F2F2;
+}
+
+.back-arrow {
+	margin-top: 12px;
+	width: 50px;
+	height: 10px;
+	display: inline;
+	color: white;
+	float: left;
 }
 
 .back-button {
