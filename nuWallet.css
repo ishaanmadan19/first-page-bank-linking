@@ -203,8 +203,7 @@ body {
 	display: inline-flex;
 }
 
-.bottom-bar-button1
-{
+.bottom-bar-button1 {
 	height:45px;
 	width: 60px;
 	float:left;
@@ -215,12 +214,12 @@ body {
 	border-color:black;
 	background-color:#F2F2F2;
 }
-.bottom-bar-button4 i
-{
+
+.bottom-bar-button4 i {
 	margin-left:15px;
 }
-.bottom-bar-button2
-{
+
+.bottom-bar-button2{
 	height:45px;
 	width: 60px;
 	float:left;
@@ -229,15 +228,18 @@ body {
 	border:none;
 	background-color:#F2F2F2;
 }
+
 .cancel-done-buttons {
 	position: absolute;
 	top:530px;
 	left:0px;
 }
+
 .cancel-done-buttons a
 {
 	color:white;
 }
+
 #done-button {
 	width: 120px;
 	height: 32px;
@@ -312,16 +314,17 @@ body {
 
 .budget-stat-list{
 	/* text-align: left; */
-	width: 70%;
-	margin-left: 38;
+	width: 80%;
+	margin-left: 30;
 	margin-top: 20;
 }
 
 .stat-list-item{
 	text-decoration: underline;
-	padding-bottom: 38px;
+	padding-bottom: 5px;
+	margin-bottom: 25px;
 	font-family: Avenir, sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .stat-list-name{
@@ -330,6 +333,21 @@ body {
 
 .stat-list-data{
 	float: right;
+}
+
+.smaller-text {
+	font-size: 14px;
+}
+
+.stat-list-tendency{
+	color: #00CC33;
+}
+
+
+.hr-line {
+	margin-bottom: 15px;
+	height: 1px;
+	background-color: lightgray;
 }
 
 #progress-groceries {
