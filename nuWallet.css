@@ -132,23 +132,24 @@ body {
 	height:16px;
 	width:54px;
 }
-.zero
-{
+
+.zero{
 	width:11px;
 	float:left;
 }
-.total-budget
-{
+
+.total-budget{
 	float:right;
 }
+
 #warning
 {
 	position: absolute;
 	text-align: center;
 	top: 230px;
 	margin-top:230px;
-
 }
+
 .touchID
 {
 	height:90px;
@@ -157,22 +158,22 @@ body {
 	left:125px;
 	top:400px;
 }
-#cancel-button
-{
+
+#cancel-button{
 	margin-left: 60px;
 }
-.confirm-button
-{
+
+.confirm-button{
 	margin-left:70px;
 }
-.spendings
-{
+
+.spendings{
 	position: inline;
 	align: inline-flex;
 	height:30px
 }
-#cards-list
-{
+
+#cards-list{
 
 	width: 160px;
 	height:120px;
@@ -278,8 +279,8 @@ body {
 	border:none;
 	background-color:#F2F2F2;
 }
-.bottom-bar-button4
-{
+
+.bottom-bar-button4{
 	height:45px;
 	width: 60px;
 	float:left;
@@ -288,8 +289,8 @@ body {
 	border:none;
 	background-color:#F2F2F2;
 }
-.bottom-bar-button5
-{
+
+.bottom-bar-button5{
 	height:45px;
 	width: 60px;
 	float:left;
@@ -298,6 +299,7 @@ body {
 	border:none;
 	background-color:#F2F2F2;
 }
+
 .back-button {
 	height:45;
 	background-color: inherit;
@@ -368,20 +370,110 @@ body {
 	width:84px;
 }
 
-.upper-screen
-{
+.upper-screen {
 	height:440px;
 	width:300px;
 }
 
-.upper-screen p1
-{
+.upper-screen p1 {
 	font-size: 35px;
 	font-family: Avenir, sans-serif;
 	margin-left: 100px;
 	padding-top:10px;
 }
-.upper-screen p2
-{
+
+.upper-screen p2 {
 	font-size:17px;
+}
+
+
+.total-budget-title {
+	font-size: 22px;
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	font-style: underline;
+	font-family: Avenir, sans-serif;
+}
+
+.top-progress-bar {
+	height:80px;
+	width: 285px;
+	margin-bottom: -20px;
+}
+
+.top-progress-total
+{
+	background-color: #CCCCCC;
+	margin-left: 15px;
+	height:16px;
+	margin-bottom: 0px;
+}
+
+#total-progress-groceries {
+	background-color: #00E065;
+	height:16px;
+	width:25%;
+	margin-bottom: 0px;
+}
+
+.item-budget-title {
+	font-size: 22px;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-style: underline;
+	font-family: Avenir, sans-serif;
+}
+
+.main-progress-bar {
+	height:80px;
+	width: 285px;
+	margin-bottom: -29px;
+}
+
+#progress-fast-food {
+	background-color: #FF6600;
+	height:16px;
+	width:15%;
+
+}
+
+#progress-education {
+	background-color: #FFCC00;
+	height:16px;
+	width:53%;
+
+}
+
+#progress-entertainement {
+	background-color: #5856D6;
+	height:16px;
+	width:8%;
+
+}
+#sub-progress-groceries {
+	background-color: rgb(0, 122, 255);
+	height:16px;
+	width:17%;
+}
+.progress-link {
+	color: #7D7D7D;
+	text-decoration: none;
+	font-family: Avenir, sans-serif;
+}
+
+.icon-changer {
+	color:#8B8B8B;
+}
+
+.category {
+	padding-top: 10px;
+	border-style: solid;
+	border-color:#CCCCCC;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-width: .05px;
 }
