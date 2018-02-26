@@ -107,5 +107,6 @@ width: 130px;
 	.personal_info {
 		position: relative;
 		margin-top: 60px;
-		margin-left: 20px;
+		margin-left: 22px;
+		width: 85%;
 	}
