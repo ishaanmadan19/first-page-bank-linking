@@ -15,6 +15,7 @@ function progress()
 	document.getElementById('remaining').innerHTML=firstRem;
 	document.getElementById('done-button').style.visibility="hidden";
 	document.getElementById('cancel-button').style.width=200;
+	
 	document.getElementById('cancel-button').style.marginLeft=85;
 	document.getElementById('cancel-button').innerHTML="Done";
 };
