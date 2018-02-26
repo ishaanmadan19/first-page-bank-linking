@@ -213,7 +213,6 @@ body {
 }
 .bottom-bar {
 	text-align: center;
-	color: black;
 	width: 300px;
 	height:45px;
 	color:white;
@@ -486,7 +485,7 @@ body {
 }
 
 .icon-changer {
-	color:#8B8B8B;
+	color:#666666;
 }
 
 .category {
