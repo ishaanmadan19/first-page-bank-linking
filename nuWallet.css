@@ -37,13 +37,14 @@ body {
 }
 
 .head-bar-nu h1{
-	font-size: 35px;
+	font-size: 24px;
 	font-family: Avenir, sans-serif;
 	font-weight: normal;
+	padding-top: 8px;
 }
 
 .head-bar-nu h2{
-	font-size: 26px;
+	font-size: 24px;
 	font-family: Avenir, sans-serif;
 	font-weight: normal;
 }
