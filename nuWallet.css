@@ -307,12 +307,20 @@ body {
 }
 
 .back-arrow {
+	position: absolute;
+	left: 30px;
 	margin-top: 12px;
-	width: 50px;
-	height: 10px;
-	display: inline;
+	height: 20px;
+	display: inline-flex;
 	color: white;
 	float: left;
+}
+
+.back-arrow-text {
+	margin-top: 3px;
+	margin-left: -6px;
+	font-family: Avenir, sans-serif;
+	font-weight: normal;
 }
 
 .back-button {
