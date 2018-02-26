@@ -1,5 +1,5 @@
-/* 
-	Global classes 
+/*
+	Global classes
 					*/
 body {
 	background-image: url("images/iphoneOL.jpg");
@@ -35,7 +35,7 @@ body {
 	line-height: 32px;
 	border-radius: 2px;
 	font-size: 0.9em;
-	
+
 }
 
 .cancel-done-buttons {
@@ -161,7 +161,7 @@ body {
 	width: 50px;
 	position: absolute;
 	left: 140px;
-	
+
 }
 
 #category-search-logos {
@@ -169,7 +169,7 @@ body {
 	position: absolute;
 	left: 140px;
 	margin-top: -5px;
-	
+
 }
 .bank-login {
 	position: relative;
@@ -254,4 +254,12 @@ a:active {
 	font-family: 'Helvetica Neue';
 	margin-top: 10px;
 	margin-left: 25px;
+}
+
+.head-bar-nu {
+	text-align: center;
+	background-color: purple;
+	color: white;
+	width: 300px;
+	height: 45px;
 }
