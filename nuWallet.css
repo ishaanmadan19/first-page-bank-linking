@@ -270,7 +270,8 @@ body {
 }
 #cancel-button2
 {
-	margin-left: 80px;
+	height:32px;
+	margin-left: 85px;
 	width:200px;
 }
 .bottom-bar-button3
