@@ -500,10 +500,10 @@ body {
 }
 .add-button {
 	position: absolute;
-	left: 285px;
+	left: 295px;
 	top: 120px;
 	font-family: Avenir, sans-serif;
-	font-size:20px;
+	font-size:15px;
 	color:white;
 	font-weight: normal;
 }
