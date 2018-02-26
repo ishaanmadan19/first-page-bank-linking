@@ -428,7 +428,6 @@ body {
 	background-color: #CCCCCC;
 	margin-left: 15px;
 	height:16px;
-	margin-bottom: 0px;
 }
 
 #total-progress-groceries {
@@ -449,7 +448,6 @@ body {
 
 .main-progress-bar {
 	height:80px;
-	width: 285px;
 	margin-bottom: -29px;
 }
 
