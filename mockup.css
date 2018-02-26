@@ -48,8 +48,13 @@ body {
 	position: absolute;
 	margin-left: 20px;
 	top:580px;
+	color:white;
+	background-color: white;
 }
-
+.cancel-done-buttons a
+{
+	color:white;
+}
 .button {
 	width: 120px;
 	height: 32px;
