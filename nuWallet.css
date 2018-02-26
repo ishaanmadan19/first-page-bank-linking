@@ -35,7 +35,12 @@ body {
 	width: 300px;
 	height: 45px;
 }
-
+.add-button
+{
+	width:15px;
+	height:15px;
+	display: inline;
+}
 .head-bar-nu h1{
 	font-size: 24px;
 	font-family: Avenir, sans-serif;
@@ -473,4 +478,13 @@ body {
 	border-right: none;
 	border-bottom: none;
 	border-width: .05px;
+}
+.add-button {
+	position: absolute;
+	left: 285px;
+	top: 120px;
+	font-family: Avenir, sans-serif;
+	font-size:20px;
+	color:white;
+	font-weight: normal;
 }
