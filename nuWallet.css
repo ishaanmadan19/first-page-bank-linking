@@ -580,3 +580,88 @@ body {
 	margin-bottom: 8px;
 	margin-top:8px;
 }
+
+.account-info {
+	width: 280px;
+	height: 60px;
+	margin-top: 10px;
+	margin-left: 10px;
+	border-style: solid;
+	border-color:#CCCCCC;
+	border-width: .05px;
+	padding-top: 10px;
+
+}
+#bank-search-us-bank{
+	width: 70px;
+	margin-left: 111px;
+	margin-top: -9px;
+
+}
+
+#bank-search-wells{
+	width: 70px;
+	margin-left: 80px;
+	margin-top: -9px;
+
+}
+
+#bank-search-chase{
+	width: 70px;
+	margin-left: 80px;
+	margin-top: -3px;
+
+}
+.account-number
+{
+	font-family: Avenir, sans-serif;
+	font-size:17px;
+	position: relative;
+	left: 20px;
+
+}
+
+.account-number-chase
+{
+	font-family: Avenir, sans-serif;
+	font-size:17px;
+	margin-left: 20px;
+	position: relative;
+	top: 10px;
+}
+.tell-balance{
+	font-family: Avenir, sans-serif;
+	font-size:17px;
+	margin-left: 54px;
+
+}
+
+.tell-balance-chase{
+	font-family: Avenir, sans-serif;
+	font-size:17px;
+	margin-left: 34px;
+	position: relative;
+	top: 10px;
+
+}
+#account-balance
+{
+	font-family: Avenir, sans-serif;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+#account-balance-chase
+{
+	font-family: Avenir, sans-serif;
+	font-size: 20px;
+	margin-left: 10px;
+	position: relative;
+	top: 10px;
+}
+
+#fix-link {
+	text-decoration: none;
+	font-weight: normal;
+	color: #7D7D7D;
+}
