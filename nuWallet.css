@@ -504,3 +504,79 @@ body {
 	color:white;
 	font-weight: normal;
 }
+#total-money-spent
+{
+	margin-left: 53px;
+	margin-bottom: 8px;
+	margin-top:8.5px;
+	font-size: 28px;
+}
+#transaction-total
+{
+	font-family: Avenir, sans-serif;
+	display: inline-block;
+}
+#money-spent
+{
+	font-family: Avenir, sans-serif;
+	font-size: 28px;
+	position: absolute;
+	top:203px;
+	left:180px;
+}
+.transaction-card
+{
+	font-family: Avenir, sans-serif;
+	font-size:20px;
+	display: inline-block;
+	text-align: left;
+	margin-left: 15px;
+	margin-bottom: 0px;
+}
+.transaction-date
+{
+	font-family: Avenir, sans-serif;
+	font-size:15px;
+	text-align: right;
+	margin-right:10px;
+	text-align: top;
+	display: inline-block;
+	float:right;
+	float:top;
+}
+.transaction-location
+{
+	font-family: Avenir, sans-serif;
+	font-size:15px;
+	text-align: left;
+	margin-left: 35px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+.transaction-amount
+{
+	font-family: Avenir, sans-serif;
+	font-size:20px;
+	display:inline-block;
+	float: right;
+	margin-right: 15px;
+}
+.transaction-category {
+	padding-top: 10px;
+	border-style: solid;
+	border-color:#CCCCCC;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-width: .05px;
+
+}
+.transaction-header
+{
+	font-size: 18px;
+	font-family: Avenir, sans-serif;
+	margin-left:70px;
+	margin-bottom: 8px;
+	margin-top:8px;
+}
