@@ -675,11 +675,16 @@ body {
 	height: 110px;
 }
 
-.account-transaction-card {
-	font-family: Avenir, sans-serif;
-	font-size:20px;
+.account-transaction-lblock {
 	display: inline-block;
-	text-align: left;
+	height: 40px;
+	width: 200px;
+}
+
+.account-transaction-name {
+	font-family: Avenir, sans-serif;
+	font-size:16px;
+	float: left;
 	margin-left: 15px;
 	margin-bottom: 0px;
 }
@@ -687,30 +692,17 @@ body {
 .account-transaction-date {
 	font-family: Avenir, sans-serif;
 	font-size:15px;
-	text-align: right;
-	margin-right:10px;
-	text-align: top;
-	display: inline-block;
-	float:right;
-	float:top;
-}
-
-.account-transaction-location {
-	font-family: Avenir, sans-serif;
-	font-size:15px;
-	text-align: left;
-	margin-left: 35px;
+	margin-left: 17px;
 	margin-bottom: 0px;
-	margin-right: 0px;
-	padding-right: 0px;
 }
 
 .account-transaction-amount {
 	font-family: Avenir, sans-serif;
-	font-size:20px;
-	display:inline-block;
+	font-size:26px;
+	display: inline-block;
 	float: right;
 	margin-right: 15px;
+	margin-top: 10px;
 }
 
 .account-transaction-category {
@@ -739,6 +731,16 @@ body {
 	margin-bottom: 5px;
 	height: 1px;
 	background-color: lightgray;
+}
+
+.filter-button{
+	position: absolute;
+	left: 285px;
+	top: 120px;
+	font-family: Avenir, sans-serif;
+	font-size:15px;
+	color:white;
+	font-weight: normal;
 }
 
 #available-balance-amount{
