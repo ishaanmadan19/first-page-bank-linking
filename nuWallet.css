@@ -347,7 +347,6 @@ body {
 }
 
 .budget-stat-list{
-	/* text-align: left; */
 	width: 80%;
 	margin-left: 30;
 	margin-top: 5;
@@ -715,14 +714,31 @@ body {
 }
 
 .account-transaction-category {
-
-	padding-top: 10px;
+	padding-top: 7px;
+	padding-bottom: 3px;
 	border-style: solid;
 	border-color:#CCCCCC;
 	border-left: none;
 	border-right: none;
-	border-bottom: none;
+	border-top: none;
 	border-width: .05px;
+}
+
+.recent-transactions-title {
+	font-family: Avenir, sans-serif;
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 19px;
+	text-align: left;
+	margin-left: 15px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+.hr-line-2 {
+	margin-bottom: 5px;
+	height: 1px;
+	background-color: lightgray;
 }
 
 #available-balance-amount{
