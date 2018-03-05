@@ -507,8 +507,8 @@ body {
 #total-money-spent
 {
 	margin-left: 53px;
-	margin-bottom: 8px;
-	margin-top:8.5px;
+	margin-bottom: 20px;
+	margin-top:20px;
 	font-size: 28px;
 }
 #transaction-total
@@ -527,7 +527,7 @@ body {
 .transaction-card
 {
 	font-family: Avenir, sans-serif;
-	font-size:20px;
+	font-size:18px;
 	display: inline-block;
 	text-align: left;
 	margin-left: 15px;
@@ -536,7 +536,7 @@ body {
 .transaction-date
 {
 	font-family: Avenir, sans-serif;
-	font-size:15px;
+	font-size:13px;
 	text-align: right;
 	margin-right:10px;
 	text-align: top;
@@ -547,20 +547,21 @@ body {
 .transaction-location
 {
 	font-family: Avenir, sans-serif;
-	font-size:15px;
+	font-size:13px;
 	text-align: left;
-	margin-left: 35px;
+	margin-left: 15px;
 	margin-bottom: 0px;
-	margin-right: 0px;
+	margin-right: 40px;
 	padding-right: 0px;
 }
 .transaction-amount
 {
 	font-family: Avenir, sans-serif;
-	font-size:20px;
+	font-size:17px;
 	display:inline-block;
 	float: right;
-	margin-right: 15px;
+	margin-left: 10px;
+	margin-right: 20px;
 }
 .transaction-category {
 	padding-top: 10px;
