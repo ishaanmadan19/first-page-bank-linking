@@ -504,28 +504,26 @@ body {
 	color:white;
 	font-weight: normal;
 }
-#total-money-spent
-{
+
+#total-money-spent{
 	margin-left: 53px;
 	margin-bottom: 8px;
 	margin-top:8.5px;
 	font-size: 28px;
-}
-#transaction-total
-{
-	font-family: Avenir, sans-serif;
 	display: inline-block;
-}
-#money-spent
-{
 	font-family: Avenir, sans-serif;
+}
+
+#money-spent{
 	font-size: 28px;
 	position: absolute;
 	top:203px;
 	left:180px;
+	display: inline-block;
+	font-family: Avenir, sans-serif;
 }
-.transaction-card
-{
+
+.transaction-card {
 	font-family: Avenir, sans-serif;
 	font-size:20px;
 	display: inline-block;
@@ -533,8 +531,8 @@ body {
 	margin-left: 15px;
 	margin-bottom: 0px;
 }
-.transaction-date
-{
+
+.transaction-date {
 	font-family: Avenir, sans-serif;
 	font-size:15px;
 	text-align: right;
@@ -544,8 +542,8 @@ body {
 	float:right;
 	float:top;
 }
-.transaction-location
-{
+
+.transaction-location {
 	font-family: Avenir, sans-serif;
 	font-size:15px;
 	text-align: left;
@@ -554,14 +552,15 @@ body {
 	margin-right: 0px;
 	padding-right: 0px;
 }
-.transaction-amount
-{
+
+.transaction-amount {
 	font-family: Avenir, sans-serif;
 	font-size:20px;
 	display:inline-block;
 	float: right;
 	margin-right: 15px;
 }
+
 .transaction-category {
 	padding-top: 10px;
 	border-style: solid;
@@ -570,10 +569,9 @@ body {
 	border-right: none;
 	border-bottom: none;
 	border-width: .05px;
-
 }
-.transaction-header
-{
+
+.transaction-header {
 	font-size: 18px;
 	font-family: Avenir, sans-serif;
 	margin-left:70px;
@@ -590,8 +588,8 @@ body {
 	border-color:#CCCCCC;
 	border-width: .05px;
 	padding-top: 10px;
-
 }
+
 #bank-search-us-bank{
 	width: 70px;
 	margin-left: 111px;
@@ -618,7 +616,6 @@ body {
 	font-size:17px;
 	position: relative;
 	left: 20px;
-
 }
 
 .account-number-chase
@@ -629,6 +626,7 @@ body {
 	position: relative;
 	top: 10px;
 }
+
 .tell-balance{
 	font-family: Avenir, sans-serif;
 	font-size:17px;
@@ -664,4 +662,113 @@ body {
 	text-decoration: none;
 	font-weight: normal;
 	color: #7D7D7D;
+}
+
+.account-title {
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	font-family: Avenir, sans-serif;
+}
+
+.account-info-header {
+	height: 110px;
+}
+
+.account-transaction-card {
+	font-family: Avenir, sans-serif;
+	font-size:20px;
+	display: inline-block;
+	text-align: left;
+	margin-left: 15px;
+	margin-bottom: 0px;
+}
+
+.account-transaction-date {
+	font-family: Avenir, sans-serif;
+	font-size:15px;
+	text-align: right;
+	margin-right:10px;
+	text-align: top;
+	display: inline-block;
+	float:right;
+	float:top;
+}
+
+.account-transaction-location {
+	font-family: Avenir, sans-serif;
+	font-size:15px;
+	text-align: left;
+	margin-left: 35px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.account-transaction-amount {
+	font-family: Avenir, sans-serif;
+	font-size:20px;
+	display:inline-block;
+	float: right;
+	margin-right: 15px;
+}
+
+.account-transaction-category {
+
+	padding-top: 10px;
+	border-style: solid;
+	border-color:#CCCCCC;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-width: .05px;
+}
+
+#available-balance-amount{
+	font-size: 28px;
+	position: relative;
+	top:10px;
+	left:165px;
+	font-family: Avenir, sans-serif;
+}
+
+#available-balance-text{
+	position: relative;
+	top:35px;
+	left: 25px;
+	font-size: 17px;
+	font-family: Avenir, sans-serif;
+}
+
+#account-number-text{
+	font-size: 14px;
+	position: absolute;
+	top:260px;
+	left: 45px;
+	font-family: Avenir, sans-serif;
+}
+
+#account-number-data{
+	font-size: 14px;
+	position: absolute;
+	top:260px;
+	left: 250px;
+	font-family: Avenir, sans-serif;
+}
+
+#routing-number-text{
+	font-size: 14px;
+	position: absolute;
+	top:280px;
+	left: 45px;
+	font-family: Avenir, sans-serif;
+}
+
+#routing-number-data{
+	font-size: 14px;
+	position: absolute;
+	top:280px;
+	left: 250px;
+	font-family: Avenir, sans-serif;
 }
