@@ -263,3 +263,10 @@ a:active {
 	width: 300px;
 	height: 45px;
 }
+
+.head-bar-nu h1{
+	font-size: 24px;
+	font-family: Avenir, sans-serif;
+	font-weight: normal;
+	padding-top: 8px;
+}
