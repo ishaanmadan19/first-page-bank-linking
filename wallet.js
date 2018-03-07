@@ -1,6 +1,4 @@
-
-
-function validateFields() {
+function validateBankRegistrationFields() {
 	//initializes variables
 	x = document.getElementById("user-id").value;
 	y = document.getElementById("user-password").value;
@@ -21,7 +19,16 @@ function validateFields() {
 	}
 	else {
 		window.location.href='p1_2_linking_banks_cards.html';
-
 	}
-	
+
+}
+
+function validateTransactionFilterFields() {
+	placeholder = document.getElementById("field_to_replace").placeholder;
+
+	if (placeholder == "Select a category" || placeholder == "Please select a category") {
+		document.getElementById("field_to_replace").placeholder = "Please select a category"
+	} else if (placeholder == "Groceries") {
+		window.location.href='USBankFilteredBy.html';
+	}
 }

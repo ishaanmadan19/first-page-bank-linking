@@ -14,18 +14,47 @@
                   </div>
                 </a>
                     <h1>US Bank</h1>
-                    <a href="USBankTransactions.html"><form class="filter-button">Apply</form></a>
+                    <form onclick="validateTransactionFilterFields()" class="filter-button">Apply</form>
               </div>
               <div class="upper-screen">
 
-                <p class="account-title">Filter by:</p>
+                <div class="account-title"><text>Filter by:</text> </div>
+
                 <div class="account-filter-header">
-                  <text id="available-balance-amount">$4,572.96</text>
-                  <text id="available-balance-text">Available Balance</text>
-                  <text id="account-number-text">Account number</text>
-                  <text id="account-number-data">890530096</text>
-                  <text id="routing-number-text">Routing number</text>
-                  <text id="routing-number-data">081202759</text>
+
+                  <form onclick="dropDown()" action="#">
+                    <div class="mdl-textfield mdl-js-textfield dropdown">
+                      <input class="mdl-textfield__input" type="text" id="field_to_replace" id="sample1"  placeholder="Select a category">
+                      <label class="mdl-textfield__label" for="sample1"></label>
+                      <div id="myDropdown" class="dropdown-content">
+                        <a href="#groceries" id="groceries" onclick="selectItem(this)">Groceries<img src="images/groceries.png" id="category-search-logos"></a>
+                        <a href="#fast-food" onclick="selectItem(this)">Fast Food<img src="images/food.png" id="category-search-logos"></a>
+                        <a href="#entertainment" onclick="selectItem(this)">Entertainment<img src="images/entertainment.png" id="category-search-logos"></a>
+                        <a href="#education" onclick="selectItem(this)">Education<img src="images/education.png" id="category-search-logos"></a>
+                      </div>
+                    </div>
+                  </form>
+
+                  <div id="filter-date-text"><text>Date:</text> </div>
+
+                  <form id="filter-form-from">
+                    <input class="mdl-textfield__input" type="text" placeholder="From">
+                  </form>
+
+                  <form id="filter-form-to">
+                    <input class="mdl-textfield__input" type="text" placeholder="To">
+                  </form>
+
+                  <div id="filter-amount-text"><text>Amount:</text> </div>
+
+                  <form id="filter-form-min">
+                    <input class="mdl-textfield__input" type="text" placeholder="Min">
+                  </form>
+
+                  <form id="filter-form-max">
+                    <input class="mdl-textfield__input" type="text" placeholder="Max">
+                  </form>
+
                 </div>
 
                 <div class="hr-line-2"></div>
@@ -93,6 +122,9 @@
 
             </div>
           </div>
+
+      <script src="link-bank.js"></script>
+      <script src="wallet.js"></script>
    </body>
 </html>
 <!--
