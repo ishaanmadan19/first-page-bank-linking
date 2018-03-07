@@ -665,6 +665,7 @@ body {
 
 .account-title {
 	font-size: 18px;
+	font-weight: bold;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	margin-left: 15px;
@@ -674,6 +675,11 @@ body {
 .account-info-header {
 	height: 110px;
 }
+
+.account-filter-header {
+	height: 120px;
+}
+
 
 .account-transaction-lblock {
 	display: inline-block;
@@ -741,6 +747,16 @@ body {
 	font-size:15px;
 	color:white;
 	font-weight: normal;
+}
+
+.filter-cancel-button {
+	position: absolute;
+	left: 37px;
+	top: 120px;
+	color: white;
+	font-family: Avenir, sans-serif;
+	font-weight: normal;
+	font-size:15px;
 }
 
 #available-balance-amount{
