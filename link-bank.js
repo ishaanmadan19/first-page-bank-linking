@@ -43,3 +43,9 @@ function checkY(){
 function zeroWindow() {
   window.name = 0;
 }
+
+function selectItem(clickedElement) {
+  x = document.getElementById(clickedElement.id).text;
+  console.log(x);
+  document.getElementById("field_to_replace").placeholder = x;
+}
