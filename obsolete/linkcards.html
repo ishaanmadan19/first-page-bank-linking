@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Cards Linking</title>
+        <link rel="stylesheet" type="text/css" href="mockup.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    </head>
+
+    <body>
+
+      <div id="screen">
+        <div class="head-bar">
+          <p class="page-title">Add Card</p></div>
+          <img src="images/card.jpeg" id="card-icon">
+
+      <div class="linking">
+         <button  class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" id="linking-button"><i class="material-icons">add</i>
+         </button>
+          <div class="linked-registry">
+            <!-- Simple Textfield -->
+            <a href="reg5_card_details.html">
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="sample1">
+                <label class="mdl-textfield__label" for="sample1">
+                  <p class="registry-writing">Add a payment card </p></label>
+              </div>
+            </form>
+          </a>
+
+        </div>
+      </div>
+      <div class="cancel-done-buttons">
+        <!-- Done button -->
+          <a href="login.html">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" id="cancel-button">Cancel
+            </button>
+          </a>
+
+        <!-- Done button -->
+        <a href="personal_info.html">
+            <button onclick="validateFields()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" id="done-button">Done
+            </button>
+          </a>
+    </div>
+   </body>
+</html>

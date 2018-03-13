@@ -18,7 +18,7 @@ function validateBankRegistrationFields() {
 		}
 	}
 	else {
-		window.location.href='p1_2_linking_banks_cards.html';
+		window.location.href='reg3_link_finance.html';
 	}
 
 }
