@@ -19,7 +19,7 @@ function progress()
 	document.getElementById('cancel-button').style.marginLeft=85;
 	document.getElementById('cancel-button').innerHTML="Done";
 };
-function progress()
+function progress2()
 {
 	document.getElementById("progress-tomake2").style.backgroundColor="#00E065";
 	document.getElementById("cancel-button").value="back";
