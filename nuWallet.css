@@ -548,7 +548,12 @@ body {
 .icon-changer {
 	color:#666666;
 }
-
+.icon-changer2 {
+	color:#666666;
+	position: absolute;
+	top:15px;
+	left:50px;
+}
 .category {
 	padding-top: 10px;
 	border-style: solid;

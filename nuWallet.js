@@ -40,21 +40,27 @@ function progress2()
 };
 function validateBankRegistrationFields() {
 	//initializes variables
-	x = document.getElementById("user-id").value;
-	y = document.getElementById("user-password").value;
-	placeholderX = document.getElementById("user-id").placeholder;
-	placeholderY = document.getElementById("user-password").placeholder;
+	x = document.getElementById("old-password").value;
+	y = document.getElementById("new-password").value;
+	z = document.getElementById("repeat-password").value;
+	placeholderX = document.getElementById("old-password").placeholder;
+	placeholderY = document.getElementById("new-password").placeholder;
+	placeholderZ = document.getElementById("repeat-password").placeholder;
 	// Checks to see if userId and Password Fields are not empty
-	if (((placeholderX == "User ID") || (placeholderX == "Please insert your ID")) && (x=="")) {
-		document.getElementById("user-id").placeholder = "Please insert your ID";
-		if ((placeholderY == "Password") || (placeholderY == "Please insert your password")){
-		document.getElementById("user-password").placeholder = "Please insert your password";
+	if (((placeholderX == "Old Password") || (placeholderX == "Please insert your old pass.")) && (x=="")) {
+		document.getElementById("old-password").placeholder = "Please insert your old pass.";
+		if ((placeholderY == "New Password") || (placeholderY == "Please insert your pass.")){
+			document.getElementById("new-password").placeholder = "Please insert your pass.";
+			if ((placeholderZ == "Repeat New Password") || (placeholderZ == "Please insert your pass."))
+			{
+				document.getElementById("repeat-password").placeholder = "Please insert your pass.";
+			}
 		}
 	}
-	else if (((placeholderY == "Password") || (placeholderY == "Please insert your password")) && (y=="")){
-		document.getElementById("user-password").placeholder = "Please insert your password";
-		if ((placeholderX == "User ID") || (placeholderX == "Please insert your ID")) {
-		document.getElementById("user-id").placeholder = "Please insert your ID";
+	else if (((placeholderY == "Old Password") || (placeholderY == "Please insert your pass.")) && (y=="")){
+		document.getElementById("old-password").placeholder = "Please insert your pass.";
+		if ((placeholderX == "New Password") || (placeholderX == "Please insert your new pass.")) {
+		document.getElementById("new-password").placeholder = "Please insert your ID";
 		}
 	}
 	else {
