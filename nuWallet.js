@@ -48,9 +48,9 @@ function validateBankRegistrationFields() {
 	placeholderZ = document.getElementById("repeat-password").placeholder;
 	// Checks to see if userId and Password Fields are not empty
 	if (((placeholderX == "Old Password") || (placeholderX == "Please insert your old pass.")) && (x=="")) {
-		document.getElementById("old-password").placeholder = "Please insert your old pass.";
-		if ((placeholderY == "New Password") || (placeholderY == "Please insert your pass.")){
-			document.getElementById("new-password").placeholder = "Please insert your pass.";
+		document.getElementById("old-password").placeholder = "Please insert your old password.";
+		if ((placeholderY == "New Password") || (placeholderY == "Please insert your password.")){
+			document.getElementById("new-password").placeholder = "Please repeat your new password.";
 			if ((placeholderZ == "Repeat New Password") || (placeholderZ == "Please insert your pass."))
 			{
 				document.getElementById("repeat-password").placeholder = "Please insert your pass.";

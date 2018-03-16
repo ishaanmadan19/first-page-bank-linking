@@ -14,9 +14,9 @@
 
       <p class="field-description">Budget Category</p>
 
-      <!-- Button to link a bank -->
+      <!-- Button to choose a budget -->
       <div class="category-linking" class="dropdown">
-          <!-- creates the field that will autopopulate when the bank account is linked -->
+          <!-- creates the field that will autopopulate -->
           <div class="dropdown">
           <div class="category-field">
             <!-- Simple Textfield -->
@@ -29,6 +29,7 @@
                   <a href="#fast-food" id="fast-food" onclick="selectItem(this)">Fast Food<img src="../images/food.png" id="category-search-logos"></a>
                   <a href="#entertainment" id="entertainment" onclick="selectItem(this)">Entertainment<img src="../images/entertainment.png" id="category-search-logos"></a>
                   <a href="#education" id="education" onclick="selectItem(this)">Education<img src="../images/education.png" id="category-search-logos"></a>
+                  <a href="#other" id="other" onclick="insertOwnCategory(this)" >Other</a>
                 </div>
               </div>
             </form>
@@ -41,7 +42,7 @@
 
 
               <div class="mdl-textfield mdl-js-textfield" class="category-field" id="create-budget-value">
-                  <input class="mdl-textfield__input" type="text" id="sample1"  placeholder="Insert a value">
+                  <input onkeyup="formatAsDollars(this)" class="mdl-textfield__input" type="text" id="budget_value" id="sample1"  placeholder="Insert a value">
                   <label class="mdl-textfield__label" for="sample1"></label>
               </div>
 
@@ -52,11 +53,13 @@
             </button>
         </a>
         <!-- Done button -->
-          <a href="mainBudgetPage.html">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" id="done-button">Add
+            <button onclick="validateBudget()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" id="done-button">Add
             </button>
-          </a>
+
    </div>
+   <iframe src="mainBudgetPage.html" id="iframe-object"></frame>
    <script src="../link-bank.js"></script>
+
+
    </body>
 </html>

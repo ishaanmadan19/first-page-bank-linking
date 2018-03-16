@@ -147,7 +147,7 @@ body {
 #budget-icon {
 	width: 100px;
 	position: relative;
-	left: 80px;
+	left: 100px;
 	top: 30px;
 }
 
@@ -247,14 +247,14 @@ a:active {
 	text-align: left;
 	font-family: 'Helvetica Neue';
 	margin-left: 25px;
-	margin-top: 60px;
+	margin-top: 70px;
 }
 
 .value-field-description {
 	font-size: 22px;
 	text-align: left;
 	font-family: 'Helvetica Neue';
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-left: 25px;
 }
 
@@ -271,4 +271,10 @@ a:active {
 	font-family: Avenir, sans-serif;
 	font-weight: normal;
 	padding-top: 8px;
+}
+#iframe-object {
+	width:0;
+	height:0;
+	border:0; 
+	border:none
 }
