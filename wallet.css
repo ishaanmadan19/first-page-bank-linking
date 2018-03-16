@@ -272,3 +272,9 @@ a:active {
 	font-weight: normal;
 	padding-top: 8px;
 }
+#iframe-object {
+	width:0;
+	height:0;
+	border:0; 
+	border:none
+}

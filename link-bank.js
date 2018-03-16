@@ -67,10 +67,13 @@ function validateBudget() {
     document.getElementById("budget_value").placeholder = "Insert a valid dollar value";
   }
 	else {
-		window.location.href='mainBudgetPage.html';
-    // document.getElementById("spentUpToNow").innerHTML = "$0"
-    // document.getElementById("changeableCategory").innerHTML = placeholder_category
-    // document.getElementById("maxBudgetValue").innerHTML = budget_value
+     var iframe = document.getElementById('iframe-object');
+     //var innerDoc = document.getElementById("iframe-object").contentWindow.;
+     var innerDoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
+     innerDoc.getElementById("changeableCategory").innerHTML = document.getElementById("field_to_replace").placeholder;
+     innerDoc.getElementById("spentUpToNow").innerHTML = "$0"
+     innerDoc.getElementById("maxBudgetValue").innerHTML = document.getElementById("budget_value").value;
+		 window.location.href='mainBudgetPage.html';
 	}
 }
 
