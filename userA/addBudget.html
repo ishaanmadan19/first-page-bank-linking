@@ -41,7 +41,7 @@
 
 
               <div class="mdl-textfield mdl-js-textfield" class="category-field" id="create-budget-value">
-                  <input class="mdl-textfield__input" type="text" id="sample1"  placeholder="Insert a value">
+                  <input onkeyup="formatAsDollars(this)" class="mdl-textfield__input" id="budget_value" type="text" id="sample1"  placeholder="Insert a value">
                   <label class="mdl-textfield__label" for="sample1"></label>
               </div>
 
@@ -52,10 +52,10 @@
             </button>
         </a>
         <!-- Done button -->
-          <a href="mainBudgetPage.html">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" id="done-button">Add
+
+            <button onclick="validateBudget()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" id="done-button">Add
             </button>
-          </a>
+
    </div>
    <script src="../link-bank.js"></script>
    </body>

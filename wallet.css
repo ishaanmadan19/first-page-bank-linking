@@ -147,7 +147,7 @@ body {
 #budget-icon {
 	width: 100px;
 	position: relative;
-	left: 80px;
+	left: 100px;
 	top: 30px;
 }
 
@@ -247,7 +247,7 @@ a:active {
 	text-align: left;
 	font-family: 'Helvetica Neue';
 	margin-left: 25px;
-	margin-top: 60px;
+	margin-top: 70px;
 }
 
 .value-field-description {
