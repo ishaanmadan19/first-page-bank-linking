@@ -24,6 +24,7 @@ window.onclick = function(event) {
 function getLinkedBank() {
    y = document.getElementById("us-bank").innerHTML;
 }
+
 window.name = window.name + "1";
 
 function checkY(){
