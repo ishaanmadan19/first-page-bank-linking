@@ -67,47 +67,60 @@ function validateBudget() {
     document.getElementById("budget_value").placeholder = "Insert a valid dollar value";
   }
 	else {
-		//window.location.href='mainBudgetPage.html';
-    document.getElementById("spentUpToNow").innerHTML = "$0"
-    document.getElementById("changeableCategory").innerHTML = placeholder_category
-    document.getElementById("maxBudgetValue").innerHTML = budget_value
+		window.location.href='mainBudgetPage.html';
+    // document.getElementById("spentUpToNow").innerHTML = "$0"
+    // document.getElementById("changeableCategory").innerHTML = placeholder_category
+    // document.getElementById("maxBudgetValue").innerHTML = budget_value
 	}
 }
 
 function formatAsDollars(el) {
   el.value = '$' + el.value.replace(/[^\d]/g,'').replace(/(\d\d?)$/,'.$1');
 }
+//
+// function createCustomBudget(placeholder_category,budget_value,exdays) {
+//       var d = new Date();
+//       d.setTime(d.getTime() + (exdays*24*60*60*1000));
+//       var expires = "expires="+ d.toUTCString();
+//       document.cookie = "username=" + placeholder_category + ";value=" + budget_value + ";zeroValue=0;expires=Thu, 18 Dec 2020 12:00:00 UTC;path=/";
+// }
+//
+// function getCookie(cname) {
+//     var name = cname + "=";
+//     var ca = document.cookie.split(';');
+//     for(var i = 0; i < ca.length; i++) {
+//         var c = ca[i];
+//         while (c.charAt(0) == ' ') {
+//             c = c.substring(1);
+//         }
+//         if (c.indexOf(name) == 0) {
+//             return c.substring(name.length, c.length);
+//         }
+//     }
+//     return "";
+// }
+//
+// function checkCookies() {
+//     var category = getCookie("username");
+//     var value = getCookie("value")
+//     if (category != "") {
+//         // set the custom category in the document
+//         document.getElementById("spentUpToNow").text = "$0"
+//         document.getElementById("changeableCategory").text = category
+//         document.getElementById("maxBudgetValue").text = value
+//     }
+//     else {}
+// }
 
-function createCustomBudget(placeholder_category,budget_value,exdays) {
-      var d = new Date();
-      d.setTime(d.getTime() + (exdays*24*60*60*1000));
-      var expires = "expires="+ d.toUTCString();
-      document.cookie = "username=" + placeholder_category + ";value=" + budget_value + ";zeroValue=0;expires=Thu, 18 Dec 2020 12:00:00 UTC;path=/";
-}
-
-function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-}
-
-function checkCookies() {
-    var category = getCookie("username");
-    var value = getCookie("value")
-    if (category != "") {
-        // set the custom category in the document
-        document.getElementById("spentUpToNow").text = "$0"
-        document.getElementById("changeableCategory").text = category
-        document.getElementById("maxBudgetValue").text = value
-    }
-    else {}
+function insertOwnCategory(clickedElement) {
+  selectItem(clickedElement);
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "text");
+  x.setAttribute("placeholder", "Insert your own category!");
+  x.setAttribute("class","mdl-textfield__input");
+  document.body.appendChild(x);
+  x.style.position = "relative";
+  x.style.left = "57px";
+  x.style.top = "-335px";
+  x.style.width = "250px";
 }
