@@ -1083,5 +1083,14 @@ body {
 
 #repeat-password {
 	margin-left: 10px;
-	margin-top: 15px;
+	margin-top: 20px;
+	width: 260px;
+}
+
+#old-password {
+	width: 260px;
+}
+
+#new-password {
+	width: 260px;
 }
