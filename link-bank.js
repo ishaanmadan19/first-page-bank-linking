@@ -73,7 +73,7 @@ function validateBudget() {
      innerDoc.getElementById("changeableCategory").innerHTML = document.getElementById("field_to_replace").placeholder;
      innerDoc.getElementById("spentUpToNow").innerHTML = "$0"
      innerDoc.getElementById("maxBudgetValue").innerHTML = document.getElementById("budget_value").value;
-		 window.location.href='mainBudgetPage.html';
+		 //window.location.href='mainBudgetPage.html';
 	}
 }
 
