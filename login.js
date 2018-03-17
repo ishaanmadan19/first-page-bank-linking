@@ -38,6 +38,7 @@ function login() {
 			if (username != "tristan" && username != "nell") {
 				document.getElementById("user-id").placeholder = "This username does not exist";
 				document.getElementById("user-id").value = "";
+				document.getElementById("user-password").value = "";
 			}
 			else {
 				document.getElementById("user-password").placeholder = "Password mismatch";
