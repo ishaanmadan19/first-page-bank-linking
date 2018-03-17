@@ -1132,3 +1132,13 @@ body {
 .scrollable {
 	overflow: scroll;
 }
+
+
+/* List of trancaction category classes {
+	tc-groceries
+	tc-fastfood
+	tc-edu
+	tc-enter
+	tc-deposit
+	tc-other
+} */
