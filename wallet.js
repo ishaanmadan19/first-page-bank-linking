@@ -53,7 +53,7 @@ function validateLogIn() {
 		}
 	}
 	else {
-		window.location.href='accountsPage.html';
+		window.location.href='bankAccountsPage.html';
 	}
 
 }
