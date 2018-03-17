@@ -64,7 +64,7 @@ function validateBudget() {
     placeholder_category = "Please select a category";
 	}
   else if (budget_value == ""){
-    document.getElementById("budget_value").placeholder = "Insert a valid dollar value";
+    document.getElementById("budget_value").placeholder = "Enter a valid dollar value";
   }
 	else {
      substituteOriginalInfo(placeholder_category,budget_value);
@@ -114,7 +114,7 @@ function insertOwnCategory(clickedElement) {
   selectItem(clickedElement);
   var x = document.createElement("INPUT");
   x.setAttribute("type", "text");
-  x.setAttribute("placeholder", "Insert your own category!");
+  x.setAttribute("placeholder", "Enter your own category!");
   x.setAttribute("class","mdl-textfield__input");
   document.body.appendChild(x);
   x.style.position = "relative";

@@ -44,17 +44,18 @@ body {
 	color:white;
 	background-color: white;
 }
+
 .cancel-done-buttons a
 {
 	color:white;
 }
+
 .button {
 	width: 120px;
 	height: 32px;
 	line-height: 32px;
 	border-radius: 2px;
 	font-size: 0.9em;
-
 }
 
 #done-button {

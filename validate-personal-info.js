@@ -12,17 +12,17 @@ function validateFields() {
   placeholder_username = document.getElementById("username").placeholder;
 
   // Checks to see if fields are not empty
-	if (((placeholder_name == "Name") || (placeholder_name == "Please insert your name")) && (name=="")) {
-		document.getElementById("name").placeholder = "Please insert your name";
+	if (((placeholder_name == "Name") || (placeholder_name == "Please enter your name")) && (name=="")) {
+		document.getElementById("name").placeholder = "Please enter your name";
 	}
   else if (!user_email.includes("@")){
-    document.getElementById("emailAddress").placeholder = "Please insert a valid email address";
+    document.getElementById("emailAddress").placeholder = "Please enter a valid email address";
   }
   else if (!phone.isNumber()){
-    document.getElementById("phone_number").placeholder = "Please insert a valid number";
+    document.getElementById("phone_number").placeholder = "Please enter a valid number";
   }
-  else if (((placeholder_username == "Username") || (placeholder_username == "Please insert a username")) && (username=="")) {
-    document.getElementById("username").placeholder = "Please insert a username";
+  else if (((placeholder_username == "Username") || (placeholder_username == "Please enter a username")) && (username=="")) {
+    document.getElementById("username").placeholder = "Please enter a username";
   }
 	else {
 		window.location.href='reg2_set_pass.html';
@@ -46,13 +46,13 @@ function validateCardsInfo() {
 
   // Checks to see if fields are not empty
 	if (!card_number.isNumber()) {
-		document.getElementById("card_number").value = "Please insert a valid card number";
+		document.getElementById("card_number").value = "Please enter a valid card number";
 	}
   else if (!isDate(expiration)){
-    document.getElementById("expiration").value = "Please insert a valid expiration date";
+    document.getElementById("expiration").value = "Please enter a valid expiration date";
   }
   else if (!code.isNumber()){
-    document.getElementById("code").value = "Please insert the security code";
+    document.getElementById("code").value = "Please enter the security code";
   }
 	else {
 		window.location.href='reg3_link_finance.html';

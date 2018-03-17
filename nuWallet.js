@@ -47,23 +47,23 @@ function validateBankRegistrationFields() {
 	placeholderY = document.getElementById("new-password").placeholder;
 	placeholderZ = document.getElementById("repeat-password").placeholder;
 
-	if (((placeholderX == "Old Password") || (placeholderX == "Please insert your old password.")) && (x=="")) {
-		document.getElementById("old-password").placeholder = "Please insert your old password.";
-		if ((placeholderY == "New Password") || (placeholderY == "Please insert your new password.")){
+	if (((placeholderX == "Old Password") || (placeholderX == "Please enter your old password.")) && (x=="")) {
+		document.getElementById("old-password").placeholder = "Please enter your old password.";
+		if ((placeholderY == "New Password") || (placeholderY == "Please enter your new password.")){
 			document.getElementById("new-password").placeholder = "Please repeat your new password.";
-			if ((placeholderZ == "Repeat New Password") || (placeholderZ == "Please insert your pass."))
+			if ((placeholderZ == "Repeat New Password") || (placeholderZ == "Please enter your pass."))
 			{
-				document.getElementById("repeat-password").placeholder = "Please insert your pass.";
+				document.getElementById("repeat-password").placeholder = "Please enter your pass.";
 			}
 		}
 	}
-	else if (((placeholderY == "New Password") || (placeholderY == "Please insert your new password.")) && (y=="")){
-		document.getElementById("new-password").placeholder = "Please insert your new password.";
-		if ((placeholderX == "Old Password") || (placeholderX == "Please insert your old password.")) {
-			document.getElementById("old-password").placeholder = "Please insert your old password";
-			if ((placeholderZ == "Repeat New Password") || (placeholderZ == "Please insert your pass."))
+	else if (((placeholderY == "New Password") || (placeholderY == "Please enter your new password.")) && (y=="")){
+		document.getElementById("new-password").placeholder = "Please enter your new password.";
+		if ((placeholderX == "Old Password") || (placeholderX == "Please enter your old password.")) {
+			document.getElementById("old-password").placeholder = "Please enter your old password";
+			if ((placeholderZ == "Repeat New Password") || (placeholderZ == "Please enter your pass."))
 			{
-				document.getElementById("repeat-password").placeholder = "Please insert your pass.";
+				document.getElementById("repeat-password").placeholder = "Please enter your pass.";
 			}
 		}
 	}
@@ -79,17 +79,17 @@ function validateFields() {
 	placeholderX = document.getElementById("user-id").placeholder;
 	placeholderY = document.getElementById("user-password").placeholder;
 
-	if (((placeholderX == "Username") || (placeholderX == "Please insert a username.")) && (x=="")) {
-		document.getElementById("user-id").placeholder = "Please insert a username.";
-		if ((placeholderY == "Password") || (placeholderY == "Please insert your password.")){
-			document.getElementById("user-password").placeholder = "Please insert your password.";
+	if (((placeholderX == "Username") || (placeholderX == "Please enter a username.")) && (x=="")) {
+		document.getElementById("user-id").placeholder = "Please enter a username.";
+		if ((placeholderY == "Password") || (placeholderY == "Please enter your password.")){
+			document.getElementById("user-password").placeholder = "Please enter your password.";
 
 		}
 	}
-	else if (((placeholderY == "Password") || (placeholderY == "Please insert your password.")) && (y=="")){
-		document.getElementById("user-password").placeholder = "Please insert your password.";
-		if ((placeholderX == "Username") || (placeholderX == "Please insert a username.")) {
-		document.getElementById("user-id").placeholder = "Please insert a username.";
+	else if (((placeholderY == "Password") || (placeholderY == "Please enter your password.")) && (y=="")){
+		document.getElementById("user-password").placeholder = "Please enter your password.";
+		if ((placeholderX == "Username") || (placeholderX == "Please enter a username.")) {
+		document.getElementById("user-id").placeholder = "Please enter a username.";
 		}
 	}
 
@@ -105,8 +105,8 @@ function validateSetPasswordFields() {
 	placeholderX = document.getElementById("new-password").placeholder;
 	placeholderY = document.getElementById("repeat-password").placeholder;
 
-	if (((placeholderX == "Password") || (placeholderX == "Please insert a password.")) && (x=="")) {
-		document.getElementById("new-password").placeholder = "Please insert a password.";
+	if (((placeholderX == "Password") || (placeholderX == "Please enter a password.")) && (x=="")) {
+		document.getElementById("new-password").placeholder = "Please enter a password.";
 		if ((placeholderY == "Repeat Password") || (placeholderY == "Please repeat your password.")){
 			document.getElementById("repeat-password").placeholder = "Please repeat your password.";
 
@@ -114,8 +114,8 @@ function validateSetPasswordFields() {
 	}
 	else if (((placeholderY == "Repeat Password") || (placeholderY == "Please repeat your password.")) && (y=="")){
 		document.getElementById("repeat-password").placeholder = "Please repeat your password.";
-		if ((placeholderX == "Password") || (placeholderX == "Please insert a password.")) {
-		document.getElementById("new-password").placeholder = "Please insert a password.";
+		if ((placeholderX == "Password") || (placeholderX == "Please enter a password.")) {
+		document.getElementById("new-password").placeholder = "Please enter a password.";
 		}
 	}
 
