@@ -72,7 +72,6 @@ function validateBankRegistrationFields() {
 	}
 
 };
-
 function validateFields() {
 	//initializes variables
 	x = document.getElementById("user-id").value;
@@ -91,6 +90,32 @@ function validateFields() {
 		document.getElementById("user-password").placeholder = "Please insert your password.";
 		if ((placeholderX == "Username") || (placeholderX == "Please insert a username.")) {
 		document.getElementById("user-id").placeholder = "Please insert a username.";
+		}
+	}
+
+	else {
+		window.location.href='UserA/homeScreen.html';
+	}
+
+};
+function validateSetPasswordFields() {
+	//initializes variables
+	x = document.getElementById("new-password").value;
+	y = document.getElementById("repeat-password").value;
+	placeholderX = document.getElementById("new-password").placeholder;
+	placeholderY = document.getElementById("repeat-password").placeholder;
+
+	if (((placeholderX == "Password") || (placeholderX == "Please insert a password.")) && (x=="")) {
+		document.getElementById("new-password").placeholder = "Please insert a password.";
+		if ((placeholderY == "Repeat Password") || (placeholderY == "Please repeat your password.")){
+			document.getElementById("repeat-password").placeholder = "Please repeat your password.";
+
+		}
+	}
+	else if (((placeholderY == "Repeat Password") || (placeholderY == "Please repeat your password.")) && (y=="")){
+		document.getElementById("repeat-password").placeholder = "Please repeat your password.";
+		if ((placeholderX == "Password") || (placeholderX == "Please insert a password.")) {
+		document.getElementById("new-password").placeholder = "Please insert a password.";
 		}
 	}
 
