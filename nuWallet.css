@@ -180,6 +180,31 @@ body {
 	left:75px;
 
 }
+#warningB
+{
+	position: absolute;
+	text-align: center;
+	top: 230px;
+	margin-top:230px;
+	left:125px;
+}
+#warningC
+{
+	position: absolute;
+	text-align: center;
+	top: 230px;
+	margin-top:230px;
+	left:100px;
+
+}
+#warningD
+{
+	position: absolute;
+	text-align: center;
+	top: 230px;
+	margin-top:230px;
+	left:90px;
+}
 #warning2
 {
 	position: absolute;
