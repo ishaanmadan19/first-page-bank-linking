@@ -759,6 +759,7 @@ body {
 	margin-top: 10px;
 	margin-left: 15px;
 	font-family: Avenir, sans-serif;
+	color: #004080;
 }
 
 .account-info-header {
@@ -781,6 +782,7 @@ body {
 .account-transaction-name {
 	font-family: Avenir, sans-serif;
 	font-size:14px;
+	color: #4C4C4C;
 	float: left;
 	margin-left: 15px;
 	margin-bottom: 0px;
@@ -802,6 +804,15 @@ body {
 	margin-top: 10px;
 }
 
+.transaction-credit{
+	color: #E9736E;
+
+}
+
+.transaction-debit{
+	color: #4EC462;
+}
+
 .account-transaction-category {
 	padding-top: 7px;
 	padding-bottom: 3px;
@@ -817,11 +828,16 @@ body {
 	font-family: Avenir, sans-serif;
 	font-weight: lighter;
 	font-style: italic;
+	color: #004080;
 	font-size: 19px;
 	text-align: left;
 	margin-left: 15px;
 	margin-bottom: 5px;
-	margin-top: 10px;
+	margin-top: 5px;
+}
+
+.recent-transactions{
+	height: 280px;
 }
 
 .hr-line-2 {
@@ -856,6 +872,7 @@ body {
 	top: 23px;
 	left:165px;
 	font-family: Avenir, sans-serif;
+	color: #4C4C4C;
 }
 
 #available-balance-text{
@@ -864,6 +881,7 @@ body {
 	left: 25px;
 	font-size: 17px;
 	font-family: Avenir, sans-serif;
+	color: #004080;
 }
 
 #account-number-text{
@@ -1123,4 +1141,8 @@ body {
 
 #set-password{
 	margin-top: 50px;
+}
+
+.scrollable {
+	overflow: scroll;
 }
