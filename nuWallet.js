@@ -46,7 +46,7 @@ function validateBankRegistrationFields() {
 	placeholderX = document.getElementById("old-password").placeholder;
 	placeholderY = document.getElementById("new-password").placeholder;
 	placeholderZ = document.getElementById("repeat-password").placeholder;
-	// Checks to see if userId and Password Fields are not empty
+
 	if (((placeholderX == "Old Password") || (placeholderX == "Please insert your old password.")) && (x=="")) {
 		document.getElementById("old-password").placeholder = "Please insert your old password.";
 		if ((placeholderY == "New Password") || (placeholderY == "Please insert your new password.")){
@@ -60,7 +60,11 @@ function validateBankRegistrationFields() {
 	else if (((placeholderY == "Old Password") || (placeholderY == "Please insert your pass.")) && (y=="")){
 		document.getElementById("old-password").placeholder = "Please insert your pass.";
 		if ((placeholderX == "New Password") || (placeholderX == "Please insert your new pass.")) {
-		document.getElementById("new-password").placeholder = "Please insert your ID";
+			document.getElementById("new-password").placeholder = "Please insert your ID";
+			if ((placeholderZ == "Repeat New Password") || (placeholderZ == "Please insert your pass."))
+			{
+				document.getElementById("repeat-password").placeholder = "Please insert your pass.";
+			}
 		}
 	}
 	else {
@@ -68,28 +72,30 @@ function validateBankRegistrationFields() {
 	}
 
 };
+
 function validateFields() {
 	//initializes variables
 	x = document.getElementById("user-id").value;
 	y = document.getElementById("user-password").value;
 	placeholderX = document.getElementById("user-id").placeholder;
 	placeholderY = document.getElementById("user-password").placeholder;
-	// Checks to see if userId and Password Fields are not empty
+
 	if (((placeholderX == "Username") || (placeholderX == "Please insert a username.")) && (x=="")) {
-		document.getElementById("user-id").placeholder = "Please insert a username";
+		document.getElementById("user-id").placeholder = "Please insert a username.";
 		if ((placeholderY == "Password") || (placeholderY == "Please insert your password.")){
 			document.getElementById("user-password").placeholder = "Please insert your password.";
 
 		}
 	}
-	else if (((placeholderY == "Username") || (placeholderY == "Please insert a username")) && (y=="")){
-		document.getElementById("user-id").placeholder = "Please insert a username.";
-		if ((placeholderX == "Password") || (placeholderX == "Please insert your password.")) {
+	else if (((placeholderY == "Password") || (placeholderY == "Please insert your password.")) && (y=="")){
 		document.getElementById("user-password").placeholder = "Please insert your password.";
+		if ((placeholderX == "Username") || (placeholderX == "Please insert a username.")) {
+		document.getElementById("user-id").placeholder = "Please insert a username.";
 		}
 	}
+
 	else {
 		window.location.href='UserA/homeScreen.html';
 	}
 
-}
+};
