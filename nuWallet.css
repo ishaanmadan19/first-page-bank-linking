@@ -1132,3 +1132,7 @@ body {
 .scrollable {
 	overflow: scroll;
 }
+.add-card-prompts
+{
+	text-align: center;
+}
