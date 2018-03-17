@@ -1124,3 +1124,7 @@ body {
 #new-password {
 	width: 260px;
 }
+
+#set-password{
+	margin-top: 50px;
+}
