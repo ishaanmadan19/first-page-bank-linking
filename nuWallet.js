@@ -57,10 +57,10 @@ function validateBankRegistrationFields() {
 			}
 		}
 	}
-	else if (((placeholderY == "Old Password") || (placeholderY == "Please insert your pass.")) && (y=="")){
-		document.getElementById("old-password").placeholder = "Please insert your pass.";
-		if ((placeholderX == "New Password") || (placeholderX == "Please insert your new pass.")) {
-			document.getElementById("new-password").placeholder = "Please insert your ID";
+	else if (((placeholderY == "New Password") || (placeholderY == "Please insert your new password.")) && (y=="")){
+		document.getElementById("new-password").placeholder = "Please insert your new password.";
+		if ((placeholderX == "Old Password") || (placeholderX == "Please insert your old password.")) {
+			document.getElementById("old-password").placeholder = "Please insert your old password";
 			if ((placeholderZ == "Repeat New Password") || (placeholderZ == "Please insert your pass."))
 			{
 				document.getElementById("repeat-password").placeholder = "Please insert your pass.";
@@ -73,7 +73,7 @@ function validateBankRegistrationFields() {
 
 };
 
-function validateFields() {
+function validatePasswordFields() {
 	//initializes variables
 	x = document.getElementById("user-id").value;
 	y = document.getElementById("user-password").value;
@@ -96,32 +96,6 @@ function validateFields() {
 
 	else {
 		window.location.href='UserA/homeScreen.html';
-	}
-}
-
-function validateSetPassowrdFields() {
-	//initializes variables
-	pass = document.getElementById("new-password").value;
-	rpt_pass = document.getElementById("repeat-password").value;
-
-	placeholder_pass = document.getElementById("new-password").placeholder;
-	placeholder_rpt_pass = document.getElementById("repeat-password").placeholder;
-	// Checks to see if userId and Password Fields are not empty
-	if (((placeholder_pass == "Password") || (placeholder_pass == "Please enter a new password.")) && (pass=="")) {
-
-		document.getElementById("new-password").placeholder = "Please enter a new password.";
-
-		if ((placeholder_rpt_pass == "Repeat Password") || (placeholder_rpt_pass == "Please repeat your password.")){
-			document.getElementById("repeat-password").placeholder = "Please repeat your password.";
-			if ((placeholder_rpt_pass == "Repeat Password") || (placeholder_rpt_pass == "Please repeat your password."))
-			{
-				document.getElementById("repeat-password").placeholder = "Please repeat your password.";
-			}
-		}
-	}
-
-	else {
-		window.location.href='reg3_link_finance.html';
 	}
 
 };
