@@ -1133,6 +1133,10 @@ body {
 	overflow: scroll;
 }
 
+.add-card-prompts
+{
+	text-align: center;
+}
 
 /* List of trancaction category classes {
 	tc-groceries
