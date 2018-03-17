@@ -35,7 +35,6 @@ function login() {
 			window.location.href='UserB/homeScreen.html';
 		}
 		else {
-
 			if (username != "tristan" && username != "nell") {
 				document.getElementById("user-id").placeholder = "This username does not exist";
 				document.getElementById("user-id").value = "";
@@ -43,12 +42,8 @@ function login() {
 			else {
 				document.getElementById("user-password").placeholder = "Password mismatch";
 				document.getElementById("user-password").value = "";
-
-
 			}
-
 		}
-
 
 	}
 
