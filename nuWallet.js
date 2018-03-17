@@ -47,9 +47,9 @@ function validateBankRegistrationFields() {
 	placeholderY = document.getElementById("new-password").placeholder;
 	placeholderZ = document.getElementById("repeat-password").placeholder;
 	// Checks to see if userId and Password Fields are not empty
-	if (((placeholderX == "Old Password") || (placeholderX == "Please insert your old pass.")) && (x=="")) {
+	if (((placeholderX == "Old Password") || (placeholderX == "Please insert your old password.")) && (x=="")) {
 		document.getElementById("old-password").placeholder = "Please insert your old password.";
-		if ((placeholderY == "New Password") || (placeholderY == "Please insert your password.")){
+		if ((placeholderY == "New Password") || (placeholderY == "Please insert your new password.")){
 			document.getElementById("new-password").placeholder = "Please repeat your new password.";
 			if ((placeholderZ == "Repeat New Password") || (placeholderZ == "Please insert your pass."))
 			{
@@ -65,6 +65,31 @@ function validateBankRegistrationFields() {
 	}
 	else {
 		window.location.href='accountPage.html';
+	}
+
+};
+function validateFields() {
+	//initializes variables
+	x = document.getElementById("user-id").value;
+	y = document.getElementById("user-password").value;
+	placeholderX = document.getElementById("user-id").placeholder;
+	placeholderY = document.getElementById("user-password").placeholder;
+	// Checks to see if userId and Password Fields are not empty
+	if (((placeholderX == "Username") || (placeholderX == "Please insert a username.")) && (x=="")) {
+		document.getElementById("user-id").placeholder = "Please insert a username";
+		if ((placeholderY == "Password") || (placeholderY == "Please insert your password.")){
+			document.getElementById("user-password").placeholder = "Please insert your password.";
+
+		}
+	}
+	else if (((placeholderY == "Username") || (placeholderY == "Please insert a username")) && (y=="")){
+		document.getElementById("user-id").placeholder = "Please insert a username.";
+		if ((placeholderX == "Password") || (placeholderX == "Please insert your password.")) {
+		document.getElementById("user-password").placeholder = "Please insert your password.";
+		}
+	}
+	else {
+		window.location.href='UserA/homeScreen.html';
 	}
 
 }
