@@ -68,6 +68,7 @@ function validateBankRegistrationFields() {
 	}
 
 };
+
 function validateFields() {
 	//initializes variables
 	x = document.getElementById("user-id").value;
@@ -90,6 +91,32 @@ function validateFields() {
 	}
 	else {
 		window.location.href='UserA/homeScreen.html';
+	}
+}
+
+function validateSetPassowrdFields() {
+	//initializes variables
+	pass = document.getElementById("new-password").value;
+	rpt_pass = document.getElementById("repeat-password").value;
+
+	placeholder_pass = document.getElementById("new-password").placeholder;
+	placeholder_rpt_pass = document.getElementById("repeat-password").placeholder;
+	// Checks to see if userId and Password Fields are not empty
+	if (((placeholder_pass == "Password") || (placeholder_pass == "Please enter a new password.")) && (pass=="")) {
+
+		document.getElementById("new-password").placeholder = "Please enter a new password.";
+
+		if ((placeholder_rpt_pass == "Repeat Password") || (placeholder_rpt_pass == "Please repeat your password.")){
+			document.getElementById("repeat-password").placeholder = "Please repeat your password.";
+			if ((placeholder_rpt_pass == "Repeat Password") || (placeholder_rpt_pass == "Please repeat your password."))
+			{
+				document.getElementById("repeat-password").placeholder = "Please repeat your password.";
+			}
+		}
+	}
+
+	else {
+		window.location.href='reg3_link_finance.html';
 	}
 
 }

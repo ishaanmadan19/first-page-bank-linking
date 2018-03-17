@@ -25,7 +25,7 @@ function validateFields() {
     document.getElementById("username").placeholder = "Please insert a username";
   }
 	else {
-		window.location.href='reg3_link_finance.html';
+		window.location.href='reg2_set_pass.html';
 	}
 
 }

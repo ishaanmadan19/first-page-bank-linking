@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>NU Wallet</title>
+        <link rel="stylesheet" type="text/css" href="nuWallet.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link rel="stylesheet"type="text/css" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    </head>
+    <body>
+        <div id="screen-2">
+
+              <div class="head-bar-nu">
+                    <h1>Set Password</h1>
+              </div>
+
+              <div class="upper-screen">
+
+                <div class="bank-login">
+
+                    <!-- Set password field-->
+
+                    <div class="linked-registry" id="set-password">
+                      <form action="#">
+                        <div id="password-change-field" class="mdl-textfield mdl-js-textfield">
+                          <input class="mdl-textfield__input" type="password" id="new-password" class="registry-writing" placeholder="Password">
+                        </div>
+                      </form>
+                    </div>
+                  </br>
+                    <!-- Repeat password field-->
+                    <div class="linked-registry">
+                      <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield">
+                          <input class="mdl-textfield__input" type="password" id="repeat-password" class="registry-writing" placeholder="Repeat Password">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="cancel-done-buttons">
+                  <!-- Done button -->
+                    <a href="reg1_user_info.html">
+                      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" id="cancel-button">Cancel
+                      </button>
+                  </a>
+                  <!-- Done button -->
+                      <button onclick="validateSetPassowrdFields()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" id="done-button">Done
+                      </button>
+                </div>
+              </div>
+
+
+          </div>
+          <script src="nuWallet.js"></script>
+   </body>
+</html>
+<!--
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->
