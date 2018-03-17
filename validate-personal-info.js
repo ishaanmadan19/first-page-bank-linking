@@ -16,10 +16,10 @@ function validateFields() {
 		document.getElementById("name").placeholder = "Please insert your name";
 	}
   else if (!user_email.includes("@")){
-    document.getElementById("emailAddress").value = "Please insert a valid email address";
+    document.getElementById("emailAddress").placeholder = "Please insert a valid email address";
   }
   else if (!phone.isNumber()){
-    document.getElementById("phone_number").value = "Please insert a valid number";
+    document.getElementById("phone_number").placeholder = "Please insert a valid number";
   }
   else if (((placeholder_username == "Username") || (placeholder_username == "Please insert a username")) && (username=="")) {
     document.getElementById("username").placeholder = "Please insert a username";
