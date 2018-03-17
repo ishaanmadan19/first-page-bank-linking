@@ -767,7 +767,7 @@ body {
 }
 
 .account-filter-header {
-	height: 130px;
+	height: 100px;
 	width: 90%;
 	margin-left: 15px;
 }
@@ -837,7 +837,13 @@ body {
 }
 
 .recent-transactions{
-	height: 280px;
+	margin-top: -5px;
+	height: 285px;
+}
+
+.recent-transactions-filter{
+	margin-top: -5px;
+	height: 306px;
 }
 
 .hr-line-2 {
@@ -916,44 +922,24 @@ body {
 	font-family: Avenir, sans-serif;
 }
 
-#filter-date-text{
-	position: relative;
-	top: -25px;
-	font-family: Avenir, sans-serif;
-	font-size: 18px;
-}
-
-#filter-form-from{
-	position: absolute;
-	top: 232px;
-	left: 135px;
-	width: 80px;
-}
-
-#filter-form-to{
-	position: absolute;
-	top: 232px;
-	left: 235px;
-	width: 80px;
-}
-
 #filter-amount-text{
 	position: relative;
-	top: -5px;
+	top: -20px;
 	font-family: Avenir, sans-serif;
 	font-size: 18px;
 }
 
 #filter-form-min{
 	position: absolute;
-	top: 272px;
+	top: 235px;
 	left: 135px;
 	width: 80px;
 }
 
 #filter-form-max{
+
 	position: absolute;
-	top: 272px;
+	top: 235px;
 	left: 235px;
 	width: 80px;
 }
