@@ -73,7 +73,7 @@ function validateBankRegistrationFields() {
 
 };
 
-function validatePasswordFields() {
+function validateFields() {
 	//initializes variables
 	x = document.getElementById("user-id").value;
 	y = document.getElementById("user-password").value;
