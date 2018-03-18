@@ -61,6 +61,8 @@ function filter() {
 	// Iterate each div in the full list of recent transactions
 	for (i=0; i<fullList.length; i++) {
 
+		console.log("I'm here 3");
+
 		amountStr = fullList[i].getElementsByClassName("account-transaction-amount").item(0).innerHTML;
 
 		if (amountStr.charAt(0) == "-") {
@@ -71,7 +73,6 @@ function filter() {
 
 		trAmount = parseFloat(amountStr);
 
-		console.log("I'm here 3");
 
 		// ONLY WHEN CATEGORY IS SELECTED
 		if (filterCategory == ""	||	fullList[i].className.split("  ")[1] == filterCategory) {
@@ -90,6 +91,9 @@ function filter() {
 	document.getElementById("filtered-contents").innerHTML = filteredList;
 
 }
+
+
+
 
 function selectItem(clickedElement) {
   selectedCategory = document.getElementById(clickedElement.id).text;
