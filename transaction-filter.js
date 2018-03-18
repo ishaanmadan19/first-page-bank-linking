@@ -19,7 +19,7 @@ function filter() {
 
 	var minAmountStr = document.getElementById("filter-form-min").value;
 	var maxAmountStr = document.getElementById("filter-form-max").value;
-	var category = document.getElementById("myDropdown").value;
+	var filterCategory = document.getElementById("myDropdown").value;
 
 	if (minAmountStr != "") {
 		minAmount = parseFloat(minAmountStr);
@@ -29,10 +29,8 @@ function filter() {
 		maxAmount = parseFloat(maxAmountStr);
 	}
 
-	// var testlist = fullList.getElementsByClassName("tc-edu");
-	// console.log(testlist)
+	var testlist = "<div class=\"recent-transactions-title\">Filtered Transactions</div>";
 
-	var testVar = document.createElement();
 
 	console.log(fullList);
 
@@ -46,18 +44,18 @@ function filter() {
 		} else {
 			amountStr = amountStr.substring(1, amountStr.length);
 		}
-
 		//AmountStr now holds str with number only (two decimal points)
 
 		trAmount = parseFloat(amountStr);
 
+		if (fullList[i].className.split("  ")[1] == "tc-groceries") {
+			testlist += fullList[i].outerHTML;
+		}
 
-
-		console.log(trAmount);
 	}
 
-	testVar.appendChild(fullList.outerHTML);
-	document.getElementById("filtered-contents").innerHTML = fullList.outerHTML;
+
+	document.getElementById("filtered-contents").innerHTML = testlist;
 
 
 
