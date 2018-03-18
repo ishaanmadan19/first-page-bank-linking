@@ -13,7 +13,7 @@ function filter() {
 	var newList;
 
 	if (!isFilled){
-		fullList = document.getElementsByClassName("account-transaction-category");
+		fullList = document.querySelectorAll(".account-transaction-category");
 		isFilled = true;
 	}
 
@@ -32,7 +32,9 @@ function filter() {
 	// var testlist = fullList.getElementsByClassName("tc-edu");
 	// console.log(testlist)
 
-	var testVar;
+	var testVar = document.createElement();
+
+	console.log(fullList);
 
 
 	// Iterate each div in the full list of recent transactions
@@ -53,6 +55,9 @@ function filter() {
 
 		console.log(trAmount);
 	}
+
+	testVar.appendChild(fullList.outerHTML);
+	document.getElementById("filtered-contents").innerHTML = fullList.outerHTML;
 
 
 
