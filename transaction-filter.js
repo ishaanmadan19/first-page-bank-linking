@@ -18,19 +18,14 @@ function filter() {
 	var maxAmountStr = document.getElementById("max-amount").value;
 	var filterCategory = selectedCategory;
 
-	console.log("selected:" + filterCategory);
-
-	if (minAmountStr == "" && maxAmountStr == "" && filterCategory == "") {
-		console.log("I got in");
-		document.getElementById("filtered-contents").innerHTML = notFoundDiv;
-		return
-	}
-
-	console.log("I'm here 1");
-
 	if (!isFilled){
 		fullList = document.querySelectorAll(".account-transaction-category");
 		isFilled = true;
+	}
+
+	if (minAmountStr == "" && maxAmountStr == "" && filterCategory == "") {
+		document.getElementById("filtered-contents").innerHTML = notFoundDiv;
+		return
 	}
 
 	if (minAmountStr != "") {
@@ -56,12 +51,8 @@ function filter() {
 		filterCategory = "tc-other";
 	}
 
-	console.log("I'm here 2");
-
 	// Iterate each div in the full list of recent transactions
 	for (i=0; i<fullList.length; i++) {
-
-		console.log("I'm here 3");
 
 		amountStr = fullList[i].getElementsByClassName("account-transaction-amount").item(0).innerHTML;
 
@@ -76,9 +67,7 @@ function filter() {
 
 		// ONLY WHEN CATEGORY IS SELECTED
 		if (filterCategory == ""	||	fullList[i].className.split("  ")[1] == filterCategory) {
-			console.log("Outer if");
 			if (trAmount >= minAmount && trAmount <= maxAmount) {
-				console.log("Inner if");
 				filteredList += fullList[i].outerHTML;
 			}
 		}
@@ -89,7 +78,6 @@ function filter() {
 	}
 
 	document.getElementById("filtered-contents").innerHTML = filteredList;
-
 }
 
 
