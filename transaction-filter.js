@@ -1,6 +1,7 @@
 //Global variables
 var fullList;
 var isFilled = false;
+var selectedCategory;
 
 
 
@@ -13,13 +14,14 @@ function filter() {
 	var newList;
 
 	if (!isFilled){
-		fullList = document.getElementsByClassName("account-transaction-category");
+		fullList = document.querySelectorAll(".account-transaction-category");
 		isFilled = true;
 	}
 
 	var minAmountStr = document.getElementById("filter-form-min").value;
 	var maxAmountStr = document.getElementById("filter-form-max").value;
-	var category = document.getElementById("myDropdown").value;
+	var filterCategory = selectedCategory;
+	console.log(filterCategory);
 
 	if (minAmountStr != "") {
 		minAmount = parseFloat(minAmountStr);
@@ -29,10 +31,10 @@ function filter() {
 		maxAmount = parseFloat(maxAmountStr);
 	}
 
-	// var testlist = fullList.getElementsByClassName("tc-edu");
-	// console.log(testlist)
+	var testlist = "<div class=\"recent-transactions-title\">Filtered Transactions</div>";
 
-	var testVar;
+
+	console.log(fullList);
 
 
 	// Iterate each div in the full list of recent transactions
@@ -44,16 +46,24 @@ function filter() {
 		} else {
 			amountStr = amountStr.substring(1, amountStr.length);
 		}
-
 		//AmountStr now holds str with number only (two decimal points)
 
 		trAmount = parseFloat(amountStr);
 
+		if (fullList[i].className.split("  ")[1] == "tc-groceries") {
+			testlist += fullList[i].outerHTML;
+		}
 
-
-		console.log(trAmount);
 	}
 
 
+	document.getElementById("filtered-contents").innerHTML = testlist;
 
+
+
+}
+
+function selectItem(clickedElement) {
+  selectedCategory = document.getElementById(clickedElement.id).text;
+  document.getElementById("field_to_replace").placeholder = selectedCategory;
 }
