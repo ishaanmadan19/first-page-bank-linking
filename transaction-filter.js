@@ -1,6 +1,7 @@
 //Global variables
 var fullList;
 var isFilled = false;
+var selectedCategory = "";
 
 
 function filter() {
@@ -15,14 +16,17 @@ function filter() {
 
 	var minAmountStr = document.getElementById("min-amount").value;
 	var maxAmountStr = document.getElementById("max-amount").value;
-	var filterCategory; 		//TODO Deok please place the selected string from dropdown here
+	var filterCategory = selectedCategory;
 
-	console.log(filterCategory);
+	console.log("selected:" + filterCategory);
 
-	if (minAmountStr == "" && maxAmountStr == "") {
+	if (minAmountStr == "" && maxAmountStr == "" && filterCategory == "") {
+		console.log("I got in");
 		document.getElementById("filtered-contents").innerHTML = notFoundDiv;
 		return
 	}
+
+	console.log("I'm here 1");
 
 	if (!isFilled){
 		fullList = document.querySelectorAll(".account-transaction-category");
@@ -38,6 +42,7 @@ function filter() {
 	}
 
 	if (filterCategory == "Groceries") {
+		console.log("filter cat changing");
 		filterCategory = "tc-groceries";
 	} else if (filterCategory == "Fast Food") {
 		filterCategory = "tc-fastfood";
@@ -51,21 +56,28 @@ function filter() {
 		filterCategory = "tc-other";
 	}
 
-
+	console.log("I'm here 2");
 
 	// Iterate each div in the full list of recent transactions
 	for (i=0; i<fullList.length; i++) {
+
 		amountStr = fullList[i].getElementsByClassName("account-transaction-amount").item(0).innerHTML;
+
 		if (amountStr.charAt(0) == "-") {
 			amountStr = amountStr.substring(2, amountStr.length);
 		} else {
 			amountStr = amountStr.substring(1, amountStr.length);
 		}
+
 		trAmount = parseFloat(amountStr);
+
+		console.log("I'm here 3");
 
 		// ONLY WHEN CATEGORY IS SELECTED
 		if (filterCategory == ""	||	fullList[i].className.split("  ")[1] == filterCategory) {
+			console.log("Outer if");
 			if (trAmount >= minAmount && trAmount <= maxAmount) {
+				console.log("Inner if");
 				filteredList += fullList[i].outerHTML;
 			}
 		}
@@ -77,4 +89,9 @@ function filter() {
 
 	document.getElementById("filtered-contents").innerHTML = filteredList;
 
+}
+
+function selectItem(clickedElement) {
+  selectedCategory = document.getElementById(clickedElement.id).text;
+  document.getElementById("field_to_replace").placeholder = selectedCategory;
 }
