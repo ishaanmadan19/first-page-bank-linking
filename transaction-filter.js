@@ -1,6 +1,7 @@
 //Global variables
 var fullList;
 var isFilled = false;
+var selectedCategory;
 
 
 
@@ -19,7 +20,8 @@ function filter() {
 
 	var minAmountStr = document.getElementById("filter-form-min").value;
 	var maxAmountStr = document.getElementById("filter-form-max").value;
-	var filterCategory = document.getElementById("myDropdown").value;
+	var filterCategory = selectedCategory;
+	console.log(filterCategory);
 
 	if (minAmountStr != "") {
 		minAmount = parseFloat(minAmountStr);
@@ -59,4 +61,9 @@ function filter() {
 
 
 
+}
+
+function selectItem(clickedElement) {
+  selectedCategory = document.getElementById(clickedElement.id).text;
+  document.getElementById("field_to_replace").placeholder = selectedCategory;
 }
