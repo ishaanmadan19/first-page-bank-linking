@@ -310,17 +310,14 @@ body {
 .bottom-bar-button1 {
 	height:45px;
 	width: 60px;
-	float:left;
 	margin: 0px;
-	border:none;
+	border: none;
 	background-color:#F2F2F2;
 }
 
 .bottom-bar-button2{
 	height:45px;
 	width: 60px;
-	float:left;
-	padding-left:8px;
 	margin: 0px;
 	border: none;
 	background-color:#F2F2F2;
@@ -329,9 +326,7 @@ body {
 {
 	height:45px;
 	width: 60px;
-	float:left;
-	padding-left:6px;
-	margin: 0px;
+	margin:0px;
 	border: none;
 	background-color:lightblue;
 }
@@ -339,8 +334,6 @@ body {
 {
 	height:45px;
 	width: 60px;
-	float:left;
-	padding-left:6px;
 	margin: 0px;
 	border: none;
 	background-color:#F2F2F2;
@@ -349,8 +342,6 @@ body {
 .bottom-bar-button4{
 	height:45px;
 	width: 60px;
-	float:left;
-	padding-left: 6px;
 	margin: 0px;
 	border:none;
 	background-color:#F2F2F2;
@@ -359,8 +350,6 @@ body {
 .bottom-bar-button5{
 	height:45px;
 	width: 60px;
-	float:left;
-	padding-left:6px;
 	margin: 0px;
 	border:none;
 	background-color:#F2F2F2;
