@@ -51,7 +51,7 @@ body {
 {
 	padding-top:60px;
 	padding-left: 50px;
-	padding-bottom: 120px;
+	padding-bottom: 80px;
 
 }
 .head-bar-nu h2{
@@ -1111,7 +1111,7 @@ body {
 }
 
 #groceries-category {
-	margin-left:45px;
+	/* margin-left:45px; */
 }
 
 #password-change-field {
@@ -1154,3 +1154,29 @@ body {
 	tc-deposit
 	tc-other
 } */
+
+.recent-budgets-filter{
+	position: relative;
+	top:-14px;
+	/* margin-top: -5px; */
+	height: 322px;
+	width:300px;
+}
+
+#progress-clothing {
+	background-color: #00E065;
+	height:16px;
+	width:50%;
+}
+
+#progress-millennial {
+	background-color: #008EFF;
+	height:16px;
+	width:30%;
+}
+
+#progress-traveling {
+	background-color: #FFCC00;
+	height:16px;
+	width:37%;
+}
