@@ -11,7 +11,7 @@
       <!-- Creates the header bar-->
       <div class="head-bar-nu"><h1>Edit Budget<h1></div>
       <img src="../images/budget.png" id="budget-icon">
-
+<form action="mainBudgetPage.html">
       <p class="field-description">Budget Category</p>
 
       <!-- Button to link a bank -->
@@ -20,9 +20,9 @@
           <div class="dropdown">
           <div class="category-field">
             <!-- Simple Textfield -->
-            <form onclick="dropDown()" action="#">
+
               <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="sample1"  placeholder="Groceries">
+                <input onclick="dropDown()" class="mdl-textfield__input" type="text" id="sample1"  placeholder="Groceries">
                 <label class="mdl-textfield__label" for="sample1"></label>
                 <div id="myDropdown" class="dropdown-content">
                   <a href="#groceries" id="groceries">Groceries<img src="../images/groceries.png" id="category-search-logos"></a>
@@ -31,7 +31,7 @@
                   <a href="#education">Education<img src="../images/education.png" id="category-search-logos"></a>
                 </div>
               </div>
-            </form>
+
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@
 
 
               <div class="mdl-textfield mdl-js-textfield" class="category-field" id="create-budget-value">
-                  <input class="mdl-textfield__input" type="text" id="sample1"  placeholder="220">
+                  <input onkeyup="formatAsDollars(this)" class="mdl-textfield__input" type="text" id="sample1" name="dollarValue" placeholder="220">
                   <label class="mdl-textfield__label" for="sample1"></label>
               </div>
 
@@ -52,11 +52,12 @@
             </button>
         </a>
         <!-- Done button -->
-          <a href="mainBudgetPage.html">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" id="done-button">Confirm
+            <button onclick="validateBudget()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" class="button" id="done-button">Confirm
             </button>
-          </a>
+
+
    </div>
+   </form>
    <script src="../link-bank.js"></script>
    </body>
 </html>
