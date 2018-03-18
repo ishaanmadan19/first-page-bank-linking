@@ -51,7 +51,7 @@ body {
 {
 	padding-top:60px;
 	padding-left: 50px;
-	padding-bottom: 120px;
+	padding-bottom: 80px;
 
 }
 .head-bar-nu h2{
@@ -310,28 +310,26 @@ body {
 .bottom-bar-button1 {
 	height:45px;
 	width: 60px;
-	float:left;
 	margin: 0px;
-	border:none;
+	border: none;
 	background-color:#F2F2F2;
+	font-size:12px;
+
 }
 
 .bottom-bar-button2{
 	height:45px;
 	width: 60px;
-	float:left;
-	padding-left:8px;
 	margin: 0px;
 	border: none;
 	background-color:#F2F2F2;
+	font-size:12px;
 }
 .this-button
 {
 	height:45px;
 	width: 60px;
-	float:left;
-	padding-left:6px;
-	margin: 0px;
+	margin:0px;
 	border: none;
 	background-color:lightblue;
 }
@@ -339,31 +337,28 @@ body {
 {
 	height:45px;
 	width: 60px;
-	float:left;
-	padding-left:6px;
 	margin: 0px;
 	border: none;
 	background-color:#F2F2F2;
+	font-size:12px;
 }
 
 .bottom-bar-button4{
 	height:45px;
 	width: 60px;
-	float:left;
-	padding-left: 6px;
 	margin: 0px;
 	border:none;
 	background-color:#F2F2F2;
+	font-size:12px;
 }
 
 .bottom-bar-button5{
 	height:45px;
 	width: 60px;
-	float:left;
-	padding-left:6px;
 	margin: 0px;
 	border:none;
 	background-color:#F2F2F2;
+	font-size:12px;
 }
 
 .back-arrow {
@@ -845,6 +840,18 @@ body {
 .recent-transactions-filter{
 	margin-top: -5px;
 	height: 306px;
+}
+
+.transactions-filter-notfound{
+	font-family: Avenir, sans-serif;
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 70px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .hr-line-2 {

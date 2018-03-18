@@ -31,6 +31,8 @@
               <a href="#fast-food" id="fast-food" onclick="selectItem(this)">Fast Food<img src="../images/food.png" id="category-search-logos"></a>
               <a href="#entertainment" id="entertainment" onclick="selectItem(this)">Entertainment<img src="../images/entertainment.png" id="category-search-logos"></a>
               <a href="#education" id="education" onclick="selectItem(this)">Education<img src="../images/education.png" id="category-search-logos"></a>
+              <a href="#education" id="deposit" onclick="selectItem(this)">Deposit<img src="../images/education.png" id="category-search-logos"></a>
+              <a href="#education" id="other" onclick="selectItem(this)">Other<img src="../images/education.png" id="category-search-logos"></a>
             </div>
           </div>
         </form>
@@ -38,11 +40,11 @@
         <div id="filter-amount-text"><text>Amount:</text> </div>
 
         <form id="filter-form-min">
-          <input class="mdl-textfield__input" type="text" placeholder="Min">
+          <input class="mdl-textfield__input" id="min-amount" type="text" placeholder="Min">
         </form>
 
         <form id="filter-form-max">
-          <input class="mdl-textfield__input" type="text" placeholder="Max">
+          <input class="mdl-textfield__input" id="max-amount" type="text" placeholder="Max">
         </form>
 
       </div>
@@ -187,7 +189,7 @@
           <text class="account-transaction-name">VENMO TRANSFER</text>
           <text class="account-transaction-date">02.07.2018</text>
         </div>
-          <div class="account-transaction-amount transaction-debit">$36.00</div>
+          <div class="account-transaction-amount transaction-credit">-$36.00</div>
       </div>
 
       <div class="account-transaction-category  tc-edu">

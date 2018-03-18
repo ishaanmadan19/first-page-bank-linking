@@ -6,6 +6,8 @@ function login() {
 	placeholder_username = document.getElementById("user-id").placeholder;
 	placeholder_pass = document.getElementById("user-password").placeholder;
 
+	console.log(username);
+
 
 	// Checking input format
 
