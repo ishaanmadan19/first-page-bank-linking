@@ -1193,3 +1193,12 @@ body {
 	border-color:white;
 	outline: none;
 }
+
+#hiddenBudget{
+	visibility: hidden;
+}
+#progress-hidden {
+	background-color: #00E065;
+	height:16px;
+	width:25%;
+}

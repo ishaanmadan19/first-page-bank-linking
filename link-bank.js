@@ -140,11 +140,18 @@ console.log("test");
 str = $_GET["dollarValue"];
 res = str.length;
 budgetValue= str.substr(0,(res - 3 ));
-if($_GET["category"] == undefined & $_GET["dollarValue"] != "" ) {
+if($_GET["category"] == undefined && $_GET["dollarValue"] != "" ) {
   document.getElementById("budget-groceries").innerHTML = budgetValue
+  width = parseInt((document.getElementById("sub-progress-groceries").style.width).slice(0,2));
+  newPercentage = width/budgetValue;
+  document.getElementById("sub-progress-groceries").style.width = newPercentage.toString() + "%";
 
 }
-else if ($_GET["category"] != undefined & $_GET["dollarValue"] != "" )
-document.getElementById("zero-budget").innerHTML = "$0";
-document.getElementById("total-new-budget").innerHTML = budgetValue
+else if ($_GET["category"] != undefined && $_GET["dollarValue"] != "" && $_GET["dollarValue"] != "0")
+document.getElementById("hiddenBudget").style.visibility = "visible";
+document.getElementsByClassName("hiddenBudgetName")[0].innerHTML = $_GET["category"];
+document.getElementsByClassName("hiddenMax")[0].innerHTML = budgetValue
+document.getElementsByClassName("hiddenZero")[0].innerHTML = "$0"
+document.getElementById("progress-hidden").style.width = "0%";
+
 }
