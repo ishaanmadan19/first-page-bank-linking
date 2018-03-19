@@ -137,20 +137,27 @@ document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function() {
 
   $_GET[decode(arguments[1])] = decode(arguments[2]);
 });
+
 console.log("test");
 str = $_GET["dollarValue"];
 res = str.length;
 budgetValue= str.substr(0,(res - 3 ));
+//width = parseInt((document.getElementById("sub-progress-groceries").style.width).slice(0,2));
 if($_GET["category"] == undefined && $_GET["dollarValue"] != "" ) {
-  document.getElementById("budget-groceries").innerHTML = budgetValue
-  width = parseInt((document.getElementById("sub-progress-groceries").style.width).slice(0,2));
-  newPercentage = width/budgetValue;
+  document.getElementById("budget-groceries").innerHTML = budgetValue;
+  //console.log(document.getElementById("sub-progress-groceries").style.width);
+  //width = parseInt((document.getElementById("sub-progress-groceries").style.width).slice(0,2));
+  console.log(budgetValue);
+  totalValue = parseInt(budgetValue.slice(1));
+  newPercentage = parseInt((86 * 100)/totalValue);
+  console.log(totalValue) ;
+  console.log(newPercentage);
   document.getElementById("sub-progress-groceries").style.width = newPercentage.toString() + "%";
 
 }
 else if ($_GET["category"] != undefined && $_GET["dollarValue"] != "" && $_GET["dollarValue"] != "0")
 document.getElementById("hiddenBudget").style.visibility = "visible";
-if($_GET["category"] = "Other") {
+if($_GET["category"] == "Other") {
   document.getElementsByClassName("hiddenBudgetName")[0].innerHTML = $_GET["other-category"];
 }
 else {
