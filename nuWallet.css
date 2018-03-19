@@ -279,6 +279,35 @@ body {
 	display: inline-flex;
 }
 
+
+.special-cancel-done-buttons{
+	position: absolute;
+	margin-left: 20px;
+	top:580px;
+	color:white;
+	background-color: white;
+}
+
+.special-cancel-done-buttons a
+{
+	color:white;
+}
+
+#special-cancel-button {
+	width: 120px;
+	height: 32px;
+}
+
+#special-done-button {
+	margin-left: 20px;
+	width: 120px;
+	height: 32px;
+	background-color: purple;
+	color: white;
+}
+
+
+
 .cancel-done-buttons {
 	position: absolute;
 	top:530px;
@@ -293,7 +322,7 @@ body {
 #done-button {
 	width: 120px;
 	height: 32px;
-	background-color: #6F2177;
+	background-color: purple;
 	color: white;
 }
 
@@ -1202,4 +1231,11 @@ body {
 	background-color: #00E065;
 	height:16px;
 	width:25%;
+}
+
+#pass-icon {
+	width: 110px;
+	position: relative;
+	left: 95px;
+	bottom: -10px;
 }
