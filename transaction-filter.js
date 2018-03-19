@@ -29,10 +29,16 @@ function filter() {
 	}
 
 	if (minAmountStr != "") {
+		if (minAmountStr.charAt(0) == "$") {
+			minAmountStr = minAmountStr.substring(1, minAmountStr.length);
+		}
 		minAmount = parseFloat(minAmountStr);
 	}
 
 	if (maxAmountStr != "") {
+		if (maxAmountStr.charAt(0) == "$") {
+			maxAmountStr = maxAmountStr.substring(1, maxAmountStr.length);
+		}
 		maxAmount = parseFloat(maxAmountStr);
 	}
 
