@@ -77,10 +77,19 @@ body {
 }
 
 .header-banks-cards-linking {
-	height: 50px;
-	width: 300px;
-	background-color: #6F2177;
 	text-align: center;
+	background-color: purple;
+	color: white;
+	width: 300px;
+	height: 45px;
+}
+
+
+.header-banks-cards-linking h1{
+	font-size: 24px;
+	font-family: Avenir, sans-serif;
+	font-weight: normal;
+	padding-top: 8px;
 }
 
 .page-title {
@@ -275,6 +284,6 @@ a:active {
 #iframe-object {
 	width:0;
 	height:0;
-	border:0; 
+	border:0;
 	border:none
 }

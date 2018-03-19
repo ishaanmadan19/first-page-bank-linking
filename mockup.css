@@ -14,10 +14,18 @@ body {
 }
 
 .head-bar {
-	height: 50px;
-	width: 300px;
-	background-color: #6F2177;
-	text-align: center;
+		text-align: center;
+		background-color: purple;
+		color: white;
+		width: 300px;
+		height: 45px;
+}
+
+.head-bar h1{
+	font-size: 24px;
+	font-family: Avenir, sans-serif;
+	font-weight: normal;
+	padding-top: 8px;
 }
 
 .page-title {
