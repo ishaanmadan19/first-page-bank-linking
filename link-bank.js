@@ -141,7 +141,6 @@ str = $_GET["dollarValue"];
 res = str.length;
 budgetValue= str.substr(0,(res - 3 ));
 if($_GET["category"] == undefined & $_GET["dollarValue"] != "" ) {
-  document.getElementById("zero-groceries").innerHTML = "$0";
   document.getElementById("budget-groceries").innerHTML = budgetValue
 
 }
