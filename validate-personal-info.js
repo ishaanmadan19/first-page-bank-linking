@@ -16,10 +16,12 @@ function validateFields() {
 		document.getElementById("name").placeholder = "Please enter your name";
 	}
   else if (!user_email.includes("@")){
-    document.getElementById("emailAddress").placeholder = "Please enter a valid email address";
+    document.getElementById("emailAddress").value = "";
+		document.getElementById("emailAddress").placeholder = "Please enter a valid email address";
   }
   else if (!phone.isNumber()){
-    document.getElementById("phone_number").placeholder = "Please enter a valid number";
+    document.getElementById("phone_number").value = "";
+		document.getElementById("phone_number").placeholder = "Please enter a valid number";
   }
   else if (((placeholder_username == "Username") || (placeholder_username == "Please enter a username")) && (username=="")) {
     document.getElementById("username").placeholder = "Please enter a username";
