@@ -1234,8 +1234,8 @@ body {
 }
 
 #pass-icon {
-width: 110px;
-	position: absolute;
-	left: 128px;
-	bottom: 150px;
+	width: 110px;
+	position: relative;
+	left: 95px;
+	bottom: -10px;
 }
