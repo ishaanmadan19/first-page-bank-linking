@@ -114,11 +114,12 @@ function insertOwnCategory(clickedElement) {
   var x = document.createElement("INPUT");
   x.setAttribute("type", "text");
   x.setAttribute("placeholder", "Enter your own category!");
+  x.setAttribute("name","other-category")
   x.setAttribute("class","mdl-textfield__input");
-  document.body.appendChild(x);
+  document.getElementById("formGET").appendChild(x);
   x.style.position = "relative";
-  x.style.left = "57px";
-  x.style.top = "-335px";
+  x.style.left = "26px";
+  x.style.top = "-125px";
   x.style.width = "250px";
 }
 
@@ -149,7 +150,13 @@ if($_GET["category"] == undefined && $_GET["dollarValue"] != "" ) {
 }
 else if ($_GET["category"] != undefined && $_GET["dollarValue"] != "" && $_GET["dollarValue"] != "0")
 document.getElementById("hiddenBudget").style.visibility = "visible";
-document.getElementsByClassName("hiddenBudgetName")[0].innerHTML = $_GET["category"];
+if($_GET["category"] = "Other") {
+  document.getElementsByClassName("hiddenBudgetName")[0].innerHTML = $_GET["other-category"];
+}
+else {
+  document.getElementsByClassName("hiddenBudgetName")[0].innerHTML = $_GET["category"];
+}
+
 document.getElementsByClassName("hiddenMax")[0].innerHTML = budgetValue
 document.getElementsByClassName("hiddenZero")[0].innerHTML = "$0"
 document.getElementById("progress-hidden").style.width = "0%";
