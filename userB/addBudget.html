@@ -4,11 +4,14 @@
         <link rel="stylesheet" type="text/css" href="../wallet.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
 
       <div id="screen-white"> <!-- Creates the white background-->
+        <form action="mainBudgetPage.html">
       <!-- Creates the header bar-->
+
       <div class="head-bar-nu"><h1>Add Budget</h1></div>
       <img src="../images/budget.png" id="budget-icon">
 
@@ -20,9 +23,9 @@
           <div class="dropdown">
           <div class="category-field">
             <!-- Simple Textfield -->
-            <form onclick="dropDown()" action="#">
+
               <div class="mdl-textfield mdl-js-textfield">
-                <input class="mdl-textfield__input" type="text" id="field_to_replace" id="sample1"  placeholder="Select a category">
+                <input onclick="dropDown()" class="mdl-textfield__input" type="text" id="field_to_replace" id="sample1" name="category" placeholder="Select a category">
                 <label class="mdl-textfield__label" for="sample1"></label>
                 <div id="myDropdown" class="dropdown-content">
                   <a href="#groceries" id="groceries" onclick="selectItem(this)">Groceries<img src="../images/groceries.png" id="category-search-logos"></a>
@@ -32,7 +35,7 @@
                   <a href="#other" id="other" onclick="insertOwnCategory(this)" >Other</a>
                 </div>
               </div>
-            </form>
+
           </div>
         </div>
       </div>
@@ -41,8 +44,8 @@
       <p class="value-field-description">Budget Value</p>
 
 
-              <div class="mdl-textfield mdl-js-textfield" class="category-field" id="create-budget-value">
-                  <input onkeyup="formatAsDollars(this)" class="mdl-textfield__input" type="text" id="budget_value" id="sample1"  placeholder="Enter a value">
+              <div class="mdl-textfield mdl-js-textfield category-field" id="create-budget-value">
+                  <input onkeyup="formatAsDollars(this)" class="mdl-textfield__input" type="text" id="budget_value" id="sample1" name="dollarValue" placeholder="Enter a value">
                   <label class="mdl-textfield__label" for="sample1"></label>
               </div>
 
@@ -57,7 +60,7 @@
             </button>
 
    </div>
-   <iframe src="mainBudgetPage.html" id="iframe-object"></frame>
+ </form>
    <script src="../link-bank.js"></script>
 
 

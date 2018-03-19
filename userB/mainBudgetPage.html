@@ -4,13 +4,15 @@
         <link rel="stylesheet" type="text/css" href="../nuWallet.css"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <link rel="stylesheet"type="text/css" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
-    <body>
+    <body onload="addEditBudget()">
         <div id="screen-2">
               <div class="head-bar-nu">
-                    <h1>Budget</h1>
-                    <a href="addBudget.html"><form class="add-button">Add</form></a>
-                  </div>
+                <h1>Budget</h1>
+                <a href="addBudget.html"><form class="add-button">Add</form></a>
+              </div>
+
               <div class="upper-screen">
 
                 <div id="month-bar" class="category">
@@ -33,16 +35,24 @@
                 </div>
               </div>
 
+              <div class="recent-budgets-filter scrollable" id="category-contents">
 
-                <div class="category">
+              <!-- <div class="account-transaction-category  tc-other">
+                <div class="account-transaction-lblock">
+                  <text class="account-transaction-name">PARKMETER 389721</text>
+                  <text class="account-transaction-date">03.04.2018</text>
+                </div>
+                  <div class="account-transaction-amount transaction-credit">-$7.15</div>
+              </div> -->
+                <div class="category tc-groceries">
                   <a href="groceriesBudget.html" class="progress-link">
                   <p id="groceries-category" class="item-budget-title">Groceries</p>
                   <div class="main-progress-bar">
                   <div class="progress-total">
                     <div id="sub-progress-groceries">
                     </div>
-                    <p class="zero">$86</p>
-                    <p class="total-budget">$220</p>
+                    <p id="zero-groceries" class="zero">$86</p>
+                    <p id="budget-groceries" class="total-budget">$220</p>
                       </div>
                     </div>
                   </a>
@@ -83,6 +93,21 @@
                   </div>
                 </div>
                 </div>
+
+                <div id="hiddenBudget" class="category">
+                <p id="changeableCategory" class="item-budget-title hiddenBudgetName">Drinks</p>
+                <div class="main-progress-bar">
+                  <div class="progress-total">
+                    <div id="progress-hidden">
+                    </div>
+                    <p id="spentUpToNow" class="zero hiddenZero">$15</p>
+                    <p id="maxBudgetValue" class="total-budget hiddenMax">$60</p>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+
 
               </div>
 

@@ -49,7 +49,7 @@ function zeroWindow() {
 function selectItem(clickedElement) {
   x = document.getElementById(clickedElement.id).text;
   console.log(x);
-  document.getElementById("field_to_replace").placeholder = x;
+  document.getElementById("field_to_replace").value = x;
 }
 
 function validateBudget() {
@@ -67,8 +67,7 @@ function validateBudget() {
     document.getElementById("budget_value").placeholder = "Enter a valid dollar value";
   }
 	else {
-     substituteOriginalInfo(placeholder_category,budget_value);
-		 window.location.href='mainBudgetPage.html';
+		 //window.location.href='mainBudgetPage.html';
 	}
 }
 
@@ -123,11 +122,36 @@ function insertOwnCategory(clickedElement) {
   x.style.width = "250px";
 }
 
-function substituteOriginalInfo(category,value) {
-var iframe = document.getElementById('iframe-object');
-//var innerDoc = document.getElementById("iframe-object").contentWindow.;
-var innerDoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
-innerDoc.getElementById("changeableCategory").innerHTML = category;
-innerDoc.getElementById("spentUpToNow").innerHTML = "$0"
-innerDoc.getElementById("maxBudgetValue").innerHTML = value;
+
+function zeroInputFields () {
+  document.getElementById("budget_value").value = "0"
+}
+
+function addEditBudget() {
+  var $_GET = {};
+document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function() {
+  function decode(s) {
+    return decodeURIComponent(s.split("+").join(" "));
+  }
+
+  $_GET[decode(arguments[1])] = decode(arguments[2]);
+});
+console.log("test");
+str = $_GET["dollarValue"];
+res = str.length;
+budgetValue= str.substr(0,(res - 3 ));
+if($_GET["category"] == undefined && $_GET["dollarValue"] != "" ) {
+  document.getElementById("budget-groceries").innerHTML = budgetValue
+  width = parseInt((document.getElementById("sub-progress-groceries").style.width).slice(0,2));
+  newPercentage = width/budgetValue;
+  document.getElementById("sub-progress-groceries").style.width = newPercentage.toString() + "%";
+
+}
+else if ($_GET["category"] != undefined && $_GET["dollarValue"] != "" && $_GET["dollarValue"] != "0")
+document.getElementById("hiddenBudget").style.visibility = "visible";
+document.getElementsByClassName("hiddenBudgetName")[0].innerHTML = $_GET["category"];
+document.getElementsByClassName("hiddenMax")[0].innerHTML = budgetValue
+document.getElementsByClassName("hiddenZero")[0].innerHTML = "$0"
+document.getElementById("progress-hidden").style.width = "0%";
+
 }

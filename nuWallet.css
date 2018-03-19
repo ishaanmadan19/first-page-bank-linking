@@ -35,12 +35,12 @@ body {
 	width: 300px;
 	height: 45px;
 }
-.add-button
+/* .add-button
 {
 	width:15px;
 	height:15px;
 	display: inline;
-}
+} */
 .head-bar-nu h1{
 	font-size: 24px;
 	font-family: Avenir, sans-serif;
@@ -534,7 +534,7 @@ body {
 #progress-fast-food {
 	background-color: #008EFF;
 	height:16px;
-	width:62%;
+	width:10%;
 
 }
 
@@ -548,7 +548,7 @@ body {
 #progress-entertainement {
 	background-color: #8000FF;
 	height:16px;
-	width:46%;
+	width:8%;
 
 }
 #sub-progress-groceries {
@@ -584,10 +584,12 @@ body {
 	position: absolute;
 	left: 295px;
 	top: 120px;
+	width:40px;
 	font-family: Avenir, sans-serif;
 	font-size:15px;
 	color:white;
 	font-weight: normal;
+	text-align: left;
 }
 
 #total-money-spent{
@@ -1112,7 +1114,7 @@ body {
 }
 
 #groceries-category {
-	margin-left:45px;
+	/* margin-left:45px; */
 }
 
 #password-change-field {
@@ -1155,3 +1157,49 @@ body {
 	tc-deposit
 	tc-other
 } */
+
+.recent-budgets-filter{
+	position: relative;
+	top:-14px;
+	/* margin-top: -5px; */
+	height: 322px;
+	width:300px;
+}
+
+#progress-clothing {
+	background-color: #00E065;
+	height:16px;
+	width:50%;
+}
+
+#progress-millennial {
+	background-color: #008EFF;
+	height:16px;
+	width:30%;
+}
+
+#progress-traveling {
+	background-color: #FFCC00;
+	height:16px;
+	width:37%;
+}
+
+#progress-drinks {
+	background-color: #8000FF;
+	height:16px;
+	width:25%;
+}
+
+#hide-button {
+	border-color:white;
+	outline: none;
+}
+
+#hiddenBudget{
+	visibility: hidden;
+}
+#progress-hidden {
+	background-color: #00E065;
+	height:16px;
+	width:25%;
+}

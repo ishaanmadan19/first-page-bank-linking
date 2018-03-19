@@ -4,13 +4,14 @@
         <link rel="stylesheet" type="text/css" href="../nuWallet.css"/>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <link rel="stylesheet"type="text/css" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
-    <body>
+    <body onload="addEditBudget()">
         <div id="screen-2">
 
               <div class="head-bar-nu">
-                    <h1>Budget</h1>
-                    <a href="addBudget.html"><form class="add-button">Add</form></a>
+                <h1>Budget</h1>
+                <a href="addBudget.html"><form class="add-button">Add</form></a>
               </div>
 
 
@@ -35,56 +36,132 @@
                   </div>
                 </div>
               </div>
+              <div class="recent-budgets-filter scrollable" id="category-contents">
 
-                    <div class="category">
-                      <a href="groceriesBudget.html" class="progress-link">
-                      <p id="groceries-category" class="item-budget-title">Groceries</p>
-                      <div class="main-progress-bar">
-                      <div class="progress-total">
-                        <div id="sub-progress-groceries">
-                        </div>
-                        <p class="zero">$86</p>
-                        <p class="total-budget">$220</p>
-                          </div>
-                        </div>
-                      </a>
+              <!-- <div class="account-transaction-category  tc-other">
+                <div class="account-transaction-lblock">
+                  <text class="account-transaction-name">PARKMETER 389721</text>
+                  <text class="account-transaction-date">03.04.2018</text>
+                </div>
+                  <div class="account-transaction-amount transaction-credit">-$7.15</div>
+              </div> -->
+                <div class="category tc-groceries">
+                  <a href="groceriesBudget.html" class="progress-link">
+                  <input type="hidden" category="Groceries" valueNow="$86" budgetValue="$220">
+                  <p id="groceries-category" class="item-budget-title">Groceries</p>
+                  <div class="main-progress-bar">
+                  <div class="progress-total">
+                    <div id="sub-progress-groceries">
                     </div>
-
-                    <div class="category">
-                    <p class="item-budget-title">Fast Food</p>
-                    <div class="main-progress-bar">
-                      <div class="progress-total">
-                        <div id="progress-fast-food">
-                        </div>
-                        <p class="zero">$186</p>
-                        <p class="total-budget">$300</p>
+                    <p id="zero-groceries" class="zero">$86</p>
+                    <p id="budget-groceries" class="total-budget">$220</p>
                       </div>
                     </div>
+                  </a>
+                </div>
+
+                <div class="category">
+                <p class="item-budget-title Fast\ Food">Fast Food</p>
+                <div class="main-progress-bar">
+                  <div class="progress-total">
+                    <div id="progress-fast-food">
+                    </div>
+                    <p class="zero">$30</p>
+                    <p class="total-budget">$300</p>
                   </div>
+                </div>
+              </div>
 
-                    <div class="category">
-                    <p class="item-budget-title">Education</p>
-                    <div class="main-progress-bar">
-                      <div class="progress-total">
-                        <div id="progress-education">
-                        </div>
-                        <p class="zero">$158</p>
-                        <p class="total-budget">$300</p>
-                      </div>
+                <div class="category">
+                <p class="item-budget-title Education">Education</p>
+                <div class="main-progress-bar">
+                  <div class="progress-total">
+                    <div id="progress-education">
                     </div>
+                    <p class="zero">$158</p>
+                    <p class="total-budget">$300</p>
                   </div>
+                </div>
+              </div>
 
-                    <div class="category">
-                    <p id="changeableCategory" class="item-budget-title">Entertainement</p>
-                    <div class="main-progress-bar">
-                      <div class="progress-total">
-                        <div id="progress-entertainement">
-                        </div>
-                        <p id="spentUpToNow" class="zero">$46</p>
-                        <p id="maxBudgetValue" class="total-budget">$100</p>
-                      </div>
+                <div class="category">
+                <p id="changeableCategory" class="item-budget-title Entertainment">Entertainement</p>
+                <div class="main-progress-bar">
+                  <div class="progress-total">
+                    <div id="progress-entertainement">
                     </div>
+                    <p id="spentUpToNow" class="zero">$8</p>
+                    <p id="maxBudgetValue" class="total-budget">$100</p>
+                  </div>
+                </div>
+                </div>
+
+                <div class="category">
+                <p id="changeableCategory" class="item-budget-title">Clothing</p>
+                <div class="main-progress-bar">
+                  <div class="progress-total">
+                    <div id="progress-clothing">
                     </div>
+                    <p id="spentUpToNow" class="zero">$75</p>
+                    <p id="maxBudgetValue" class="total-budget">$150</p>
+                  </div>
+                </div>
+                </div>
+
+                <div class="category">
+                <p id="changeableCategory" class="item-budget-title">Millennial's Stuff</p>
+                <div class="main-progress-bar">
+                  <div class="progress-total">
+                    <div id="progress-millennial">
+                    </div>
+                    <p id="spentUpToNow" class="zero">$150</p>
+                    <p id="maxBudgetValue" class="total-budget">$500</p>
+                  </div>
+                </div>
+                </div>
+
+                <div class="category">
+                <p id="changeableCategory" class="item-budget-title">Traveling</p>
+                <div class="main-progress-bar">
+                  <div class="progress-total">
+                    <div id="progress-traveling">
+                    </div>
+                    <p id="spentUpToNow" class="zero">$48</p>
+                    <p id="maxBudgetValue" class="total-budget">$130</p>
+                  </div>
+                </div>
+                </div>
+
+                <div class="category">
+                <p id="changeableCategory" class="item-budget-title">Drinks</p>
+                <div class="main-progress-bar">
+                  <div class="progress-total">
+                    <div id="progress-drinks">
+                    </div>
+                    <p id="spentUpToNow" class="zero">$15</p>
+                    <p id="maxBudgetValue" class="total-budget">$60</p>
+                  </div>
+                </div>
+                </div>
+
+                <div id="hiddenBudget" class="category">
+                <p id="changeableCategory" class="item-budget-title hiddenBudgetName">Drinks</p>
+                <div class="main-progress-bar">
+                  <div class="progress-total">
+                    <div id="progress-hidden">
+                    </div>
+                    <p id="spentUpToNow" class="zero hiddenZero">$15</p>
+                    <p id="maxBudgetValue" class="total-budget hiddenMax">$60</p>
+                  </div>
+                </div>
+                </div>
+
+
+              </div>
+
+
+                </form>
+
 
                   </div>
 
